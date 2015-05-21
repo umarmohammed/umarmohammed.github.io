@@ -1,0 +1,44 @@
+#
+# Blog Settings
+#
+author: David Boike
+description: "David Boike's Blog: Build. Optimize. Make Awesome."
+url: "http://www.make-awesome.com"
+title: David Boike
+subtitle: "Build. Optimize. Make Awesome."
+gravatar_url: https://2.gravatar.com/avatar/618a5078721cbfeb92fcd6393c8126f5
+subscribe_rss: http://feeds.feedburner.com/MakeAwesome
+
+# Github repositories
+github_user: DavidBoike
+github_repo_url: https://github.com/DavidBoike/davidboike.github.io/
+
+# Twitter
+twitter_user: DavidBoike
+twitter_tweet_button: true
+
+# Stack Overflow
+stackoverflow_url: http://stackoverflow.com/users/10039/david-boike
+
+# Disqus Comments
+disqus_short_name: davidboike
+disqus_show_comment_count: true
+
+# Google Analytics
+google_analytics_tracking_id: UA-15084368-1
+
+
+#
+# Jekyll Settings
+#
+markdown: redcarpet
+redcarpet:
+  extensions: ["tables"]
+permalink: /:year/:month/:title/
+paginate: 20
+paginate_path: "page/:num"
+category_dir: categories
+
+gems:
+  - jekyll-redirect-from
+  - jekyll-sitemap

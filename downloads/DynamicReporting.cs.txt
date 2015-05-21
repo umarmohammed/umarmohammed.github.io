@@ -1,0 +1,275 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Dynamic;
+
+namespace DynamicReporting
+{
+	class Program
+	{
+		static void Main(string[] args)
+		{
+			List<ReportData> data = CreateRandomData();
+			Report("Raw Data, Top 10", data.Take(10));
+			Report("Group Platform", Process(data, DateMode.Hourly, true, false).Take(10));
+			Report("Group Size", Process(data, DateMode.Hourly, false, true).Take(10));
+			Report("Group Platform & Size", Process(data, DateMode.Hourly, true, true).Take(10));
+			Report("Group All by Day", Process(data, DateMode.Daily, true, true).Take(10));
+			Report("Group All by Week", Process(data, DateMode.Weekly, true, true).Take(10));
+			Report("Group All by Month", Process(data, DateMode.Monthly, true, true).Take(10));
+			Report("Group All Summary", Process(data, DateMode.Summary, true, true).Take(10));
+			Report("Summary By Types", Process(data, DateMode.Summary, false, false).Take(10));
+			Console.ReadLine();
+		}
+
+		private static List<ReportData> CreateRandomData()
+		{
+			List<ReportData> data = new List<ReportData>();
+			Random rand = new Random();
+			DateTime start = new DateTime(2011, 1, 1);
+			DateTime end = new DateTime(2011, 7, 1);
+
+			for (DateTime dt = start; dt < end; dt = dt.AddHours(1))
+			{
+				foreach (string platform in new string[] { "Web", "iOS", "Android" })
+				{
+					foreach (string size in new string[] { "Standard", "Enhanced" })
+					{
+						int views = rand.Next(0, 50);
+						int clicks = rand.Next(0, views / 3);
+						data.Add(new ReportData
+						{
+							Date = dt,
+							Platform = platform,
+							Size = size,
+							Views = views,
+							Clicks = clicks
+						});
+					}
+				}
+			}
+
+			Console.WriteLine("Generated {0} Sample Rows", data.Count);
+			return data;
+		}
+
+		private static void Report(string label, IEnumerable<ReportData> data)
+		{
+			Console.WriteLine();
+			Console.WriteLine(label);
+			string format = "{0:MM/dd/yyyy HH:mm}   {1,-8}  {2,-8}  {3,6}  {4,6}";
+			Console.WriteLine(format, "Date            ", "Platform", "Size", "Views", "Clicks");
+			foreach (ReportData d in data)
+				Console.WriteLine(format, d.Date, d.Platform, d.Size, d.Views, d.Clicks);
+		}
+
+		private static IEnumerable<ReportData> Process(IEnumerable<ReportData> data, DateMode dateMode, bool platform, bool size)
+		{
+			return ProcessVersion2(data, dateMode, platform, size);
+		}
+
+		private static IEnumerable<ReportData> ProcessVersion2(IEnumerable<ReportData> data, DateMode dateMode, bool platform, bool size)
+		{
+			return data
+				.GroupBy(d =>
+				{
+					dynamic key = new ExpandoObject();
+
+					switch (dateMode)
+					{
+						case DateMode.Hourly: key.Date = d.Date; break;
+						case DateMode.Daily: key.Date = d.Date.Date; break;
+						case DateMode.Weekly: key.Date = d.Date.Date.AddDays(-((int)d.Date.DayOfWeek)); break;
+						case DateMode.Monthly: key.Date = new DateTime(d.Date.Year, d.Date.Month, 1); break;
+						case DateMode.Summary: key.Date = DateTime.MinValue; break;
+					}
+
+					if (!platform)
+						key.Platform = d.Platform;
+
+					if (!size)
+						key.Size = d.Size;
+
+					return new DynamicHashWrapper(key);
+				})
+				.Select(g => new ReportData
+				{
+					Date = g.Key.Value.Date,
+					Platform = platform ? "All" : g.Key.Value.Platform,
+					Size = size ? "All" : g.Key.Value.Size,
+					Views = g.Sum(d => d.Views),
+					Clicks = g.Sum(d => d.Clicks)
+				});
+		}
+
+		private static IEnumerable<ReportData> ProcessVersion1(IEnumerable<ReportData> data, DateMode dateMode, bool platform, bool size)
+		{
+			if (platform)
+			{
+				data = data.GroupBy(d => new
+				{
+					Date = d.Date,
+					Size = d.Size,
+				})
+				.Select(g => new ReportData
+				{
+					Date = g.Key.Date,
+					Platform = "All",
+					Size = g.Key.Size,
+					Views = g.Sum(d => d.Views),
+					Clicks = g.Sum(d => d.Clicks)
+				});
+			}
+
+			if (size)
+			{
+				data = data.GroupBy(d => new
+				{
+					Date = d.Date,
+					Platform = d.Platform,
+				})
+				.Select(g => new ReportData
+				{
+					Date = g.Key.Date,
+					Platform = g.Key.Platform,
+					Size = "All",
+					Views = g.Sum(d => d.Views),
+					Clicks = g.Sum(d => d.Clicks)
+				});
+			}
+
+			switch (dateMode)
+			{
+				case DateMode.Hourly:
+					// No need to modify the data, we're assuming it comes from 
+					// the database already grouped by Hour
+					break;
+				case DateMode.Daily:
+					data = data.GroupBy(d => new
+					{
+						Date = d.Date.Date,
+						Platform = d.Platform,
+						Size = d.Size
+					})
+					.Select(g => new ReportData
+					{
+						Date = g.Key.Date,
+						Platform = g.Key.Platform,
+						Size = g.Key.Size,
+						Views = g.Sum(d => d.Views),
+						Clicks = g.Sum(d => d.Clicks)
+					});
+					break;
+				case DateMode.Weekly:
+					data = data.GroupBy(d => new
+					{
+						Date = d.Date.Date.AddDays(-((int)d.Date.Date.DayOfWeek)),
+						Platform = d.Platform,
+						Size = d.Size
+					})
+					.Select(g => new ReportData
+					{
+						Date = g.Key.Date,
+						Platform = g.Key.Platform,
+						Size = g.Key.Size,
+						Views = g.Sum(d => d.Views),
+						Clicks = g.Sum(d => d.Clicks)
+					});
+					break;
+				case DateMode.Monthly:
+					data = data.GroupBy(d => new
+					{
+						Date = new DateTime(d.Date.Year, d.Date.Month, 1),
+						Platform = d.Platform,
+						Size = d.Size
+					})
+					.Select(g => new ReportData
+					{
+						Date = g.Key.Date,
+						Platform = g.Key.Platform,
+						Size = g.Key.Size,
+						Views = g.Sum(d => d.Views),
+						Clicks = g.Sum(d => d.Clicks)
+					});
+					break;
+				case DateMode.Summary:
+					data = data.GroupBy(d => new
+					{
+						Platform = d.Platform,
+						Size = d.Size
+					})
+					.Select(g => new ReportData
+					{
+						Date = DateTime.MinValue,
+						Platform = g.Key.Platform,
+						Size = g.Key.Size,
+						Views = g.Sum(d => d.Views),
+						Clicks = g.Sum(d => d.Clicks)
+					});
+					break;
+
+			}
+
+			return data;
+		}
+	}
+
+	public class ReportData
+	{
+		public DateTime Date { get; set; }
+		public string Platform { get; set; }
+		public string Size { get; set; }
+		public int Views { get; set; }
+		public int Clicks { get; set; }
+	}
+
+	public enum DateMode
+	{
+		Hourly,
+		Daily,
+		Weekly,
+		Monthly,
+		Summary,
+	}
+
+	public class DynamicHashWrapper
+	{
+		public dynamic Value { get; private set; }
+
+		private Dictionary<string, object> dict;
+		private HashSet<string> keys;
+		private static IEqualityComparer<HashSet<string>> keyComparer = HashSet<string>.CreateSetComparer();
+
+		public DynamicHashWrapper(dynamic value)
+		{
+			this.Value = value;
+			dict = new Dictionary<string, object>(value as IDictionary<string, object>);
+			keys = new HashSet<string>(dict.Keys);
+		}
+
+		private int? hashCode;
+		public override int GetHashCode()
+		{
+			if (!this.hashCode.HasValue)
+			{
+				int code = 0;
+				foreach (var entry in dict.OrderBy(p => p.Key))
+					code ^= entry.Value.GetHashCode();
+				this.hashCode = code;
+			}
+			return this.hashCode.Value;
+		}
+
+		public override bool Equals(object obj)
+		{
+			if (!(obj is DynamicHashWrapper))
+				return false;
+
+			DynamicHashWrapper other = obj as DynamicHashWrapper;
+
+			return keyComparer.Equals(this.keys, other.keys)
+				&& this.GetHashCode() == other.GetHashCode();
+		}
+	}
+}
