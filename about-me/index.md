@@ -37,7 +37,7 @@ I happened upon this career quite by accident.  In 2004 I earned a Bachelor of 
 
 However, my upbringing in the College of Engineering (as opposed to Computer Science) drove home the importance of engineering concepts that I carry over to software, and became my mantra:
 
-1. **Build.** Theory doesn't make anybody any money, and ideas are cheap. You need to design it, build it, and [ship it]((http://www.joelonsoftware.com/items/2009/09/23.html)) before it will matter to anybody.
+1. **Build.** Theory doesn't make anybody any money, and ideas are cheap. You need to design it, build it, and [ship it](http://www.joelonsoftware.com/items/2009/09/23.html) before it will matter to anybody.
 2. **Optimize.** Iterate. Make it better, faster, stronger. Make it more user-friendly. The code you wrote yesterday sucks, but that's not a negative. It's an opportunity.
 3.  **Make awesome.** Don't half-ass stuff. Make sure *awesome* is present in everything you do.
 
