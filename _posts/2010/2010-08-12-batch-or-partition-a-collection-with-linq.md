@@ -37,9 +37,9 @@ What is needed is simply take a few, and keep track of your place.
 Here was my first solution. **(DO NOT USE THIS! IT IS BAD!)**
 
     // INEFFICIENT! DO NOT USE!
-    public static IEnumerable> Batch(this IEnumerable collection, int batchSize)
+    public static IEnumerable<T> Batch<T>(this IEnumerable<T> collection, int batchSize)
     {
-        IEnumerable remaining = collection;
+        IEnumerable<T> remaining = collection;
         while(remaining.Any())
         {
             yield return remaining.Take(batchSize);
@@ -51,16 +51,16 @@ Turns out this is horrible. Apparently you have to be careful when combining the
 
 So instead, here is a solution that scales up well. I guess you could call it back to basics.
 
-    public static IEnumerable> Batch(this IEnumerable collection, int batchSize)
+    public static IEnumerable<T> Batch<T>(this IEnumerable<T> collection, int batchSize)
     {
-        List nextbatch = new List(batchSize);
+        List<T> nextbatch = new List<T>(batchSize);
         foreach (T item in collection)
         {
             nextbatch.Add(item);
             if (nextbatch.Count == batchSize)
             {
                 yield return nextbatch;
-                nextbatch = new List(batchSize);
+                nextbatch = new List<T>(batchSize);
             }
         }
         if (nextbatch.Count > 0)
