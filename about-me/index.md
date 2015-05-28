@@ -14,22 +14,49 @@ categories:
 tags: []
 comments: true
 ---
-**Who are you?**
 
-I'm David Boike.  I live in the Minneapolis/St. Paul metro area with my wife, my 1-year-old daughter, a Yorkshire Terrier, and a ca.  I am a Senior II Consultant for ILM Professional Services where I consult for Twin Cities clients using the Microsoft .NET stack.
+My name is David Boike. You may have gathered that from the title of this blog. Welcome.
 
-*This would probably be a good time to throw in that any viewpoints expressed in this blog are my own and in no way have anything to do with my employer.*
+## Personal stuff
 
-**What's with your site title?**
+I live in the Minneapolis/St. Paul metro area with my wife, my 3.5-year-old daughter and 7-month-old son, and a Yorkshire Terrier who likes to wake me up 10 minutes before my alarm would have anyway, much to my eternal chagrin.
+
+*Children's ages accurate as of May 2015. They keep getting older and I am unable to stop it.*
+
+## Work
+
+I work for [Particular Software](http://particular.net/), the makers of [NServiceBus](http://particular.net/NServiceBus), which is awesome because I get to work with a globally distributed team of amazingly smart and talented people, using software that I love, and do it all from the comfort of my own home.
+
+*This would probably be a good time to throw in that any viewpoints expressed in this blog are my own and in no way have anything to do with Particular.*
+
+I'm also the author of [Learning NServiceBus](https://www.packtpub.com/application-development/learning-nservicebus-second-edition), which is now in its second edition.
+
+## Make Awesome?
 
 I happened upon this career quite by accident.  In 2004 I earned a Bachelor of Science in [Electrical Engineering](http://www.ece.iastate.edu/) from Iowa State University, but long before I earned it I knew I had found software engineering (which wasn't offered as a major at the time) and knew I would have nothing to do with building circuits or power companies.
 
 However, my upbringing in the College of Engineering (as opposed to Computer Science) drove home the importance of engineering concepts that I carry over to software, and became my mantra:
 
-**Build. Optimize. Make Awesome.**
+1. **Build.** Theory doesn't make anybody any money, and ideas are cheap. You need to design it, build it, and [ship it]((http://www.joelonsoftware.com/items/2009/09/23.html)) before it will matter to anybody.
+2. **Optimize.** Iterate. Make it better, faster, stronger. Make it more user-friendly. The code you wrote yesterday sucks, but that's not a negative. It's an opportunity.
+3.  **Make awesome.** Don't half-ass stuff. Make sure *awesome* is present in everything you do.
 
-1.  **Build.** Theory doesn't make anybody any money.  Have an idea, design it, and build it, and remember that [shipping is a feature too](http://www.joelonsoftware.com/items/2009/09/23.html).
-2.  **Optimize.** Make it go faster.  Make it work better.  Make it more user-friendly.  If shipping is a feature then you're going to (by definition) ship imperfect code.  The code you wrote last week, last month, or last year always sucks, but that's not an unfortunate fact, that's an opportunity.
-3.  **Make awesome.** Don't just make "it" awesome, make awesome.  Awesome is a thing that can be created.  Don't just make something that resembles awesome, infuse everything you do with awesome.  Take it to the next level, or you're just wasting your time building something lame.
+I've thought about changing the domain name but at this point it's linked from so many different places on the Internet that it's not worth the effort.
 
- And yes, I would love to secure the domain [makeawesome.com](http://makeawesome.com/) (without the dash) but apparently it's occupied by some sort of unfinished art project.  Bummer.
+## Other Interests
+
+In my free time, which as a parent of two small children is measured in very small units, I love homebrew beer. Of course drinking it afterward is pretty great too.
+
+At this point I have purchased enough brewing equipment that I can no longer claim to be saving money by brewing my own beer instead of buying it from the store. But I don't care.
+
+I love the way that brewing beer combines an engineering discipline (process improvement, controls) with an artistic side, much the same as writing code. I may have mentioned this already, but I also like to drink the results.
+
+## Contributing
+
+Every post in my blog has an edit link that lets you edit the blog post directly in the browser and automatically sends me a pull request. So if you find an error, don't yell at me; send me a pull request!
+
+If you do, you'll also be listed on my [contributors page](/contributors/).
+
+## Questions/Contact
+
+To get in touch with me, you can use the [feedback link](https://github.com/DavidBoike/feedback/issues/new) in the menu, which will allow you to open an issue in my feedback repository. Because GitHub is awesome. You can also browse [other questions](https://github.com/DavidBoike/feedback/issues?q=is%3Aissue) people have asked me. But don't expect a lot. I'm not that popular.
