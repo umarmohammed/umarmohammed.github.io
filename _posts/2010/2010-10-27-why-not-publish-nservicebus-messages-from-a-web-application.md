@@ -16,6 +16,13 @@ tags:
 - NServiceBus
 comments: true
 ---
+
+> Things change, and this guidance is now a bit outdated. Improvements Microsoft has made to IIS, more varied methods of hosting .NET web applications, and the addition of additional NServiceBus transports have made things much more nuanced. It is possible, and in some circumstances, even advisable to publish events from within a web application, but it should still be considered very carefully before being implemented.
+
+> Read the updated [NServiceBus guidance for publishing events from web applications](http://docs.particular.net/nservicebus/hosting/publishing-from-web-applications) now.
+
+> *The rest of this article should be considered deprecated and is here for historical purposes only.*
+
 It may be the single most asked question on the [NServiceBus Yahoo Group](http://tech.groups.yahoo.com/group/nservicebus/), and it usually goes something like this:
 
 > The [NServiceBus Documentation/FAQ](http://www.nservicebus.com/Documentation.aspx) says not to publish messages from a web application. But...why?
