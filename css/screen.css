@@ -357,10 +357,12 @@ article .entry-content .video-container embed {
 .meta a:hover { color: #666 }
 .meta .date,
 .meta .tags,
+.meta .categories,
 .meta .comments,
 .meta .edit { padding-right: 10px }
 .meta .date:before,
 .meta .tags:before,
+.meta .categories:before,
 .meta .comments:before,
 .meta .edit:before {
     color: #ccc;
@@ -371,6 +373,7 @@ article .entry-content .video-container embed {
 @media screen and (max-width: 800px) {
     .meta .date,
     .meta .tags,
+    .meta .categories,
     .meta .comments,
     .meta .edit {
         display: -moz-inline-stack;
@@ -384,6 +387,7 @@ article .entry-content .video-container embed {
 }
 .meta .date:before { content: "\f073" }
 .meta .tags:before { content: "\f02c" }
+.meta .categories:before { content: "\f07c" }
 .meta .comments:before { content: "\f075" }
 .meta .edit:before { content: "\f044" }
 #content article .entry-content .archives { font-family: "Open Sans" }
@@ -557,4 +561,8 @@ pre {
     line-height: inherit;
     background-color: inherit;
     border-style: none;
+}
+
+.related-posts {
+    margin-top: 3em;
 }
