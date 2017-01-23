@@ -7,17 +7,6 @@ author:
   display_name: David Boike
   email: david.boike@gmail.com
   url: http://www.make-awesome.com
-excerpt: <p>My publisher has allowed me to reprint my favorite part of my book, <a
-  href="http:&#47;&#47;www.packtpub.com&#47;build-distributed-software-systems-using-dot-net-enterprise-service-bus&#47;book">Learning
-  NServiceBus</a>, here on my blog. It is the introduction to Chapter 3, Preparing
-  for Failure.</p>  <p>Why is it my favorite? Chapter 3 is the chapter that deals
-  with how to be ready for the inevitable errors that will befall a system due to
-  the <a href="http:&#47;&#47;en.wikipedia.org&#47;wiki&#47;Fallacies_of_Distributed_Computing">fallacies
-  of distributed computing</a>, stupid user tricks, and plain outright buggy code.
-  This is the part of NServiceBus that <a href="http:&#47;&#47;www.make-awesome.com&#47;2011&#47;02&#47;my-nservicebus-moment-of-bliss&#47;">really
-  grabbed me in the beginning</a> and has never let go.</p>  <p>Plus, and
-  I can&rsquo;t stress this point enough, <em><strong>this is the part of the book
-  about Batman</strong></em>.</p>
 date: '2013-11-12 21:34:26 -0600'
 date_gmt: '2013-11-13 03:34:26 -0600'
 categories:
@@ -33,6 +22,8 @@ My publisher has allowed me to reprint my favorite part of my book, [Learning NS
 Why is it my favorite? Chapter 3 is the chapter that deals with how to be ready for the inevitable errors that will befall a system due to the [fallacies of distributed computing](http://en.wikipedia.org/wiki/Fallacies_of_Distributed_Computing), stupid user tricks, and plain outright buggy code. This is the part of NServiceBus that [really grabbed me in the beginning](http://www.make-awesome.com/2011/02/my-nservicebus-moment-of-bliss/) and has never let go.
 
 Plus, and I can’t stress this point enough, ***this is the part of the book about Batman***.
+
+<!-- more -->
 
 > Alfred: Why do we fall sir? So that we can learn to pick ourselves up.
 > Bruce: You still haven't given up on me?

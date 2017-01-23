@@ -7,7 +7,6 @@ author:
   display_name: David Boike
   email: david.boike@gmail.com
   url: http://www.make-awesome.com
-excerpt: "I&rsquo;m no  big fan of Apple&rsquo;s Push Notifications API, but the fact is that iOS  applications are no passing fad.&nbsp; As developers providing server-side resources  to mobile applications, our job is to do so as efficiently as possible.\r\n\r\nFor  .NET developers able to commit financial resources, third party solutions such as  Urban Airship can be the answer.&nbsp; For developers wishing to control their own  destiny, the open-source apns-sharp  provides Apple push notifications and feedback services in a C# library.\r\n\r\nConsidering  the ridiculous  complexity of the Apple Push Notification format, it would behoove any developer  to use apns-sharp instead of trying to re-invent the wheel.&nbsp; NServiceBus together  with apns-sharp would offer the reliability and scalability needed to successfully  send push notifications for a high-capacity enterprise system.\r\n\r\nUnfortunately,  until recently apns-sharp and NServiceBus didn&rsquo;t work and play well together.&nbsp;  I contributed to the apns-sharp to address these shortcomings.&nbsp; In this article,  I will describe how to use these modifications to apns-sharp to send push notifications  with NServiceBus.\r\n\r\n"
 date: '2011-02-08 21:30:00 -0600'
 date_gmt: '2011-02-09 03:30:00 -0600'
 categories:
@@ -26,6 +25,8 @@ For .NET developers able to commit financial resources, third party solutions su
 Considering the [ridiculous complexity of the Apple Push Notification format](http://www.make-awesome.com/2010/10/hey-apple-your-push-notifications-api-sucks/), it would behoove any developer to use apns-sharp instead of trying to re-invent the wheel.  NServiceBus together with apns-sharp would offer the reliability and scalability needed to successfully send push notifications for a high-capacity enterprise system.
 
 Unfortunately, until recently apns-sharp and NServiceBus didn’t work and play well together.  I contributed to the apns-sharp to address these shortcomings.  In this article, I will describe how to use these modifications to apns-sharp to send push notifications with NServiceBus.
+
+<!-- more -->
 
 ## Getting the apns-sharp library
 

@@ -7,7 +7,6 @@ author:
   display_name: David Boike
   email: david.boike@gmail.com
   url: http://www.make-awesome.com
-excerpt: "I hear lots of stories about how designers and developers can't get along.  \ Personally, I don't get it.  I love our web designers.  They do something I can't.  \ I don't do pretty.  I can design a user interface and make it functional, but  that's not enough.  Our designers can turn that around and make it gorgeous.  We  complement each other, and I try to take care of them whenever I can.\r\n\r\nSo  when we made the leap from self-hosted Subversion to Kiln-hosted  Mercurial, I wanted to better integrate our designers in the development  process.  I wanted them to have the same advantages of version control that I, as  a developer, was accustomed to.  And I really wanted to put an end to opening directories  and finding \"default.aspx\", \"default - Copy.aspx\", \"default - Copy (2).aspx\",  etc.\r\n\r\nThe problem with Mercurial is that it doesn't work too well for web  designers that don't have a locally hosted webserver on their workstation.  When  testing a bunch of CSS changes, an \"edit, save, commit, push, refresh, check, repeat  as necessary\" workflow does not work.  Designers need to be able to modify files  on a shared design webserver where they can preview their changes immediately and  then commit when done with a task.\r\n\r\nAdditionally, the designers only need  access to the website directory, and attempting to do a 3-way merge makes them run  for the hills.  And why wouldn't it - I don't even enjoy that.\r\n\r\nSo  like most developers, I figured there must be a way I can fix this problem with  software.\r\n\r\n"
 date: '2010-10-11 21:20:07 -0500'
 date_gmt: '2010-10-12 02:20:07 -0500'
 categories:
@@ -29,6 +28,8 @@ The problem with Mercurial is that it doesn't work too well for web designers th
 Additionally, the designers only need access to the website directory, and attempting to do a 3-way merge makes them run for the hills. And why wouldn't it - I don't even enjoy *that*.
 
 So like most developers, I figured there must be a way I can fix this problem with software.
+
+<!-- more -->
 
 #### Introducting HgRemote
 

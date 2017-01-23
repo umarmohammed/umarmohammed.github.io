@@ -7,7 +7,6 @@ author:
   display_name: David Boike
   email: david.boike@gmail.com
   url: http://www.make-awesome.com
-excerpt: "Recently&nbsp;Charlie Barker&nbsp;(@Porkstone&nbsp;on Twitter) asked me what I felt were  pros and cons of using RavenDB over a standard relational database. In this series  of posts I highlight the differences between RavenDB and a RDBMS that I have experienced  after completing three projects that incorporate Raven in some capacity.\r\n\r\nSQL  Server is generally poor at doing any sort of polymorphism because normalized rows  and columns are just not really good at representing that.\r\n\r\nHere's just a  small sampling of (all bad, in my opinion) ways I can think of to handle polymorphism  in SQL Server:\r\n"
 date: '2013-01-24 08:00:56 -0600'
 date_gmt: '2013-01-24 14:00:56 -0600'
 categories:
@@ -22,6 +21,8 @@ comments: true
 *Recently [Charlie Barker](http://www.dualbotic.com/DB/blog/) ([@Porkstone](https://twitter.com/porkstone) on Twitter) asked me what I felt were pros and cons of using RavenDB over a standard relational database. In this series of posts I highlight the differences between RavenDB and a RDBMS that I have experienced after completing three projects that incorporate Raven in some capacity.*
 
 SQL Server is generally poor at doing any sort of polymorphism because normalized rows and columns are just not really good at representing that.
+
+<!-- more -->
 
 Here's just a small sampling of (all bad, in my opinion) ways I can think of to handle polymorphism in SQL Server:
 

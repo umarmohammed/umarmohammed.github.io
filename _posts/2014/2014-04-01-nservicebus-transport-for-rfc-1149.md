@@ -7,7 +7,6 @@ author:
   display_name: David Boike
   email: david.boike@gmail.com
   url: http://www.make-awesome.com
-excerpt: "As readers of this blog already know, NServiceBus offers a great framework for building distributed  systems with publish&#47;subscribe, automatic retries, long-running business processes,  high performance, and scalability. It offers a fully pluggable transport mechanism  so that it can be run over MSMQ, RabbitMQ, ActiveMQ, Windows Azure, or even use  SQL Server as its queuing infrastructure. No matter which transport you choose,  NServiceBus enables you to build a highly reliable system with minimal effort.\r\n\r\nBut  who wants that?\r\n\r\nHonestly the developers at Particular have gone  a little bit overboard with how easy they have made it to build these robust distributed  systems. This is why it&rsquo;s such good news that, thanks to me, there is finally  an NServiceBus transport available that supports RFC 1149: IP Datagrams over Avian Carriers.\r\n\r\n"
 date: '2014-04-01 00:00:00 -0500'
 date_gmt: '2014-04-01 05:00:00 -0500'
 categories:
@@ -18,17 +17,19 @@ tags:
 - April Fools
 comments: true
 ---
-As readers of this blog already know, [NServiceBus](http://particular.net/NServiceBus) offers a great framework for building distributed systems with publish/subscribe, automatic retries, long-running business processes, high performance, and scalability. It offers a fully pluggable transport mechanism so that it can be run over MSMQ, RabbitMQ, ActiveMQ, Windows Azure, or even use SQL Server as its queuing infrastructure. No matter which transport you choose, NServiceBus enables you to build a highly reliable system with minimal effort.
+As readers of this blog already know, [NServiceBus](http://particular.net/NServiceBus) offers a great framework for building distributed systems with publish/subscribe, automatic retries, long-running business processes, high performance, and scalability. It offers a fully pluggable transport mechanism so that it can be run over MSMQ, RabbitMQ, Windows Azure, or even use SQL Server as its queuing infrastructure. No matter which transport you choose, NServiceBus enables you to build a highly reliable system with minimal effort.
 
 **But who wants that?**
 
 Honestly the developers at Particular have gone a little bit overboard with how easy they have made it to build these robust distributed systems. This is why it’s such good news that, thanks to me, there is finally an NServiceBus transport available that supports [RFC 1149: IP Datagrams over Avian Carriers](http://tools.ietf.org/html/rfc1149).
 
-That’s right, MSMQ, ActiveMQ, and all those existing transports? Their major failing is they’re all too reliable. There’s just no challenge in creating a system on such a reliable transport. You do that, and your system may be laden with undesirable side effects like running smoothly, and never losing data. As a result, you might get to head home from work on time and be forced to spend time with your family who loves you. You might never get phone calls waking you up in the middle of the night to deal with some sort of crisis. Can you imagine?
+That’s right, MSMQ, RabbitMQ, and all those existing transports? Their major failing is they’re all too reliable. There’s just no challenge in creating a system on such a reliable transport. You do that, and your system may be laden with undesirable side effects like running smoothly, and never losing data. As a result, you might get to head home from work on time and be forced to spend time with your family who loves you. You might never get phone calls waking you up in the middle of the night to deal with some sort of crisis. Can you imagine?
 
 And worst of all, without the system crashing down every Monday, Tuesday, and every other Thursday, your boss may start to realize he doesn’t need someone as skilled as you to run it anymore, and may replace you with a couple college interns.
 
 So what you need is a much less reliable transport, and that transport is [NServiceBus.Rfc1149](https://github.com/DavidBoike/NServiceBus.Rfc1149). You’re welcome.
+
+<!-- more -->
 
 So here’s how it works:
 

@@ -7,17 +7,6 @@ author:
   display_name: David Boike
   email: david.boike@gmail.com
   url: http://www.make-awesome.com
-excerpt: <p>Every year users are conducting more of their lives online, but they&rsquo;re
-  also doing so from more screens than ever before. It's not uncommon for me to access
-  the same web application from my work computer, home computer, iPhone, and iPad,
-  and those are just the devices that I consider &ldquo;mine&rdquo;. (Not that I own
-  my work computer, but that I am its only user.)</p>  <p>If your web application
-  contains anything of real value, the real danger comes from public computers that
-  your users may use. It&rsquo;s all too easy for a user to forget to log off from
-  a website, and most webapps make it impossible to log off those sessions remotely.</p>  <p>I
-  believe it&rsquo;s becoming more important to allow your users the ability to globally
-  log off from your website, clearing not only local credentials stored in cookies,
-  but invalidating all the user&rsquo;s sessions across all devices.</p>
 date: '2012-01-09 20:23:25 -0600'
 date_gmt: '2012-01-10 02:23:25 -0600'
 categories:
@@ -32,6 +21,8 @@ Every year users are conducting more of their lives online, but they’re also d
 If your web application contains anything of real value, the real danger comes from public computers that your users may use. It’s all too easy for a user to forget to log off from a website, and most webapps make it impossible to log off those sessions remotely.
 
 I believe it’s becoming more important to allow your users the ability to globally log off from your website, clearing not only local credentials stored in cookies, but invalidating all the user’s sessions across all devices.
+
+<!-- more -->
 
 Some websites have already begun to do this:
 

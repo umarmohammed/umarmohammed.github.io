@@ -7,7 +7,6 @@ author:
   display_name: David Boike
   email: david.boike@gmail.com
   url: http://www.make-awesome.com
-excerpt: "At work we use Hudson Continuous Integration for our build servers because,  among other reasons:\r\n\r\n\r\n\tIt's FREE!\r\n\tIt  runs on Windows (for our C# builds) and on Mac&#47;Linux (for our iOS&#47;Android  builds).\r\n\tIt has a web-based GUI that is MUCH easier to use than  the XML-driven config used by CruiseControl.NET,  which we used before switching to Hudson.\r\n\tIt has a rich system  of plugins for adding functionality.\r\n\tDid I mention it's FREE?\r\n\r\n\r\nThe  one nice thing about CruiseControl.NET was that because it had one complex XML configuration  file, I would only edit that file in source control so that I could back out my  changes if I screwed it up.  Now I need a way to back up the Hudson configuration  files so that if one of my build servers goes up in flames, I can get my team back  in business quickly.\r\n\r\nA good backup solution needs to be automatic and offsite,  and due to the magic of distributed version control and the inherent job execution  nature of Hudson, we can back up Hudson with Hudson.  If this isn't the  ultimate in universe folding in on itself awesome, I don't know what is.\r\n\r\n"
 date: '2011-07-09 18:32:57 -0500'
 date_gmt: '2011-07-09 23:32:57 -0500'
 categories:
@@ -33,6 +32,8 @@ At work we use Hudson Continuous Integration for our build servers because, amon
 The one nice thing about CruiseControl.NET was that because it had one complex XML configuration file, I would only edit that file in source control so that I could back out my changes if I screwed it up. Now I need a way to back up the Hudson configuration files so that if one of my build servers goes up in flames, I can get my team back in business quickly.
 
 A good backup solution needs to be automatic and offsite, and due to the magic of distributed version control and the inherent job execution nature of Hudson, we can back up Hudson *with Hudson*. If this isn't the ultimate in universe folding in on itself awesome, I don't know what is.
+
+<!-- more -->
 
 To get your own backup started:
 

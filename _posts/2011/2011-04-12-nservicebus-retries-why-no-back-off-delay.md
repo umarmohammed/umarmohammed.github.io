@@ -7,7 +7,6 @@ author:
   display_name: David Boike
   email: david.boike@gmail.com
   url: http://www.make-awesome.com
-excerpt: "When presenting my Distributed  Application Development with NServiceBus talk at the Twin  Cities Code Camp 10, I was asked by an attendee why NServiceBus's automated  retry feature doesn't have some sort of a delay or back-off algorithm.&nbsp; Unfortunately  I had never really thought about it, and I didn't have a very good answer for him.\r\n\r\nThis  week I have the good fortune to be attending Udi  Dahan's Advanced  Distributed System Design course in New York, so I thought I would get the  answer direct from the source.\r\n\r\nUdi gave me several good reasons why this  is intentionally left out of NServiceBus.&nbsp; I'll try to convey his answers and  add my own thoughts as well.\r\n\r\n"
 date: '2011-04-12 21:01:42 -0500'
 date_gmt: '2011-04-13 02:01:42 -0500'
 categories:
@@ -22,6 +21,8 @@ When presenting my [Distributed Application Development with NServiceBu](http://
 This week I have the good fortune to be attending [Udi Dahan's](http://www.udidahan.com) [Advanced Distributed System Design](http://www.udidahan.com/training/#Advanced_Distributed_System_Design) course in New York, so I thought I would get the answer direct from the source.
 
 Udi gave me several good reasons why this is intentionally left out of NServiceBus.  I'll try to convey his answers and add my own thoughts as well.
+
+<!-- more -->
 
 ### Why would you want a delay in the first place?
 

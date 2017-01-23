@@ -33,10 +33,12 @@ google_analytics_tracking_id: UA-15084368-1
 #
 markdown: kramdown
 permalink: /:year/:month/:title/
-paginate: 20
+paginate: 10
 paginate_path: "page/:num"
 category_dir: categories
+excerpt_separator: "<!-- more -->"
 
 gems:
   - jekyll-redirect-from
   - jekyll-sitemap
+  - jekyll-paginate

@@ -37,6 +37,8 @@ Sadly, it looks like NetPeerTcpBinding doesn't work in ASP.NET. Although the fol
 
  Um, gee, thanks.
 
+ <!-- more -->
+
 ## WcfPeerNode Class
 
  As dismayed as I was to be robbed of my new ASP.NET toy, the code would still work for a Console or Windows Forms application, so here it is.

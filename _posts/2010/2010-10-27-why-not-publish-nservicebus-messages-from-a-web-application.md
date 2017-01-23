@@ -7,7 +7,6 @@ author:
   display_name: David Boike
   email: david.boike@gmail.com
   url: http://www.make-awesome.com
-excerpt: "It may be the single most asked question on the NServiceBus  Yahoo Group, and it usually goes something like this:\r\n\r\n\r\nThe  NServiceBus  Documentation&#47;FAQ says not to publish messages from a web application.  \ But...why?\r\n\r\n\r\nAll the documentation says on the topic  amounts to \"Don't.  Bus.Send() a message instead.\"  This is true and good practice,  but developers are smart people that aren't commonly happy with an answer that doesn't  include a why.\r\n\r\nIn this article I'll go into some depth on the three main  reasons why you're better off using Bus.Send() when in the web world than Bus.Publish().\r\n\r\n"
 date: '2010-10-27 22:12:57 -0500'
 date_gmt: '2010-10-28 03:12:57 -0500'
 categories:
@@ -18,9 +17,9 @@ comments: true
 ---
 
 > Things change, and this guidance is now a bit outdated. Improvements Microsoft has made to IIS, more varied methods of hosting .NET web applications, and the addition of additional NServiceBus transports have made things much more nuanced. It is possible, and in some circumstances, even advisable to publish events from within a web application, but it should still be considered very carefully before being implemented.
-
+>
 > Read the updated [NServiceBus guidance for publishing events from web applications](http://docs.particular.net/nservicebus/hosting/publishing-from-web-applications) now.
-
+>
 > *The rest of this article should be considered deprecated and is here for historical purposes only.*
 
 It may be the single most asked question on the [NServiceBus Yahoo Group](http://tech.groups.yahoo.com/group/nservicebus/), and it usually goes something like this:
@@ -30,6 +29,8 @@ It may be the single most asked question on the [NServiceBus Yahoo Group](http:/
 All the documentation says on the topic amounts to "Don't. Bus.Send() a message instead." This is true and good practice, but developers are smart people that aren't commonly happy with an answer that doesn't include a why.
 
 In this article I'll go into some depth on the three main reasons why you're better off using Bus.Send() when in the web world than Bus.Publish().
+
+<!-- more -->
 
 ### Transactions and Consistency
 

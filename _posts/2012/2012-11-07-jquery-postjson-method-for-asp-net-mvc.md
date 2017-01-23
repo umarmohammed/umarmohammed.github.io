@@ -22,9 +22,11 @@ comments: true
 ---
 Part of the reason I blog is that it serves as a healthy reminder for me of the best ways I've found to do things. The Internet is full of information that's just plain wrong, or only wrong in certain scenarios that don't always match mine.
 
-So when I have to grapple with the exact same stupid problem for the second time, it's obviously time to record it, if only for the sanity of Future Me.
+So when I have to grapple with the exact same stupid problem for the second time, it's obviously time to record it, if only for the sanity of Future Me. Today's example is posting JSON to an ASP.NET MVC action method.
 
-Today's example is posting JSON to an ASP.NET MVC action method. There are a bunch of examples all over the Internet that will tell you to do this:
+<!-- more -->
+
+There are a bunch of examples all over the Internet that will tell you to do this:
 
     // THIS IS WRONG!
     // Well.....at least for MVC.

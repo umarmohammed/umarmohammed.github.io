@@ -23,4 +23,6 @@ I want to be clear that I don’t intend to start some sort of Angular vs. Ember
 
 It’s clear that I need better audio equipment if I intend to keep doing screencasts, but I think it’s passable. I hope you enjoy it!
 
+<!-- more -->
+
 <div style="text-align: center; margin: 1em 0;"><iframe src="//www.youtube.com/embed/nz8lAKHBgJY" width="560" height="315" frameborder="0" allowfullscreen="allowfullscreen"></iframe></div>

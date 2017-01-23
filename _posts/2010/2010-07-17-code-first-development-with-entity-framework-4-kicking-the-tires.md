@@ -7,7 +7,6 @@ author:
   display_name: David Boike
   email: david.boike@gmail.com
   url: http://www.make-awesome.com
-excerpt: "Yesterday Scott  Guthrie wrote about the new \"code-first\" data access paradigm that Microsoft  has released as an update to the Entity Framework, in his blog  post with the same name as this one.  (So I'm lazy!)  I read it and was  blown away.  The speed, power, and elegance that this solution provides now (and  will provide in the future after it matures out of CTP) looks like a big win for  developers all over, but of course I had to download the bits and put it through  its paces.\r\n\r\n"
 date: '2010-07-17 15:38:18 -0500'
 date_gmt: '2010-07-17 20:38:18 -0500'
 categories:
@@ -20,6 +19,8 @@ tags:
 comments: true
 ---
 Yesterday [Scott Guthrie](http://weblogs.asp.net/scottgu/) wrote about the new "code-first" data access paradigm that Microsoft has released as an update to the Entity Framework, in his [blog post with the same name as this one](http://weblogs.asp.net/scottgu/archive/2010/07/16/code-first-development-with-entity-framework-4.aspx). (So I'm lazy!) I read it and was blown away. The speed, power, and elegance that this solution provides now (and will provide in the future after it matures out of CTP) looks like a big win for developers all over, but of course I had to download the bits and put it through its paces.
+
+<!-- more -->
 
 ### Walk before you run
 

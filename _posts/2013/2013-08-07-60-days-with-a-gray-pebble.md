@@ -7,7 +7,6 @@ author:
   display_name: David Boike
   email: david.boike@gmail.com
   url: http://www.make-awesome.com
-excerpt: "About two months ago, I received a very exciting email. &ldquo;Your Pebble  has shipped!&rdquo; it proclaimed, and on June 10, my gray Pebble finally arrived  after months of waiting. Unboxing videos are all well and good, but this week marks  60 days since the Pebble first hit my wrist. It&rsquo;s no longer a new thing, and  instead just a thing, and so I thought this would be a good time to share my thoughts  about the device.\r\nThe Wait\r\nAccording to my Kickstarter backer  history, I backed Pebble on April 13, 2012, which was only the third day of the  funding campaign. Obviously I was excited about it, because it would have been even  earlier if I hadn&rsquo;t delayed to ask my wife if it was OK with her. We decided  it could be my birthday present from her for 2012. My birthday is in August and  at the time, Pebble was anticipating shipping that fall. (I admit to being notoriously  difficult to shop for. These &ldquo;birthday present deals&rdquo; are fairly common  in our house.)\r\n\r\n"
 date: '2013-08-07 21:54:25 -0500'
 date_gmt: '2013-08-08 02:54:25 -0500'
 categories:
@@ -22,9 +21,11 @@ comments: true
 
 About two months ago, I received a very exciting email. “Your Pebble has shipped!” it proclaimed, and on June 10, my gray Pebble finally arrived after months of waiting. Unboxing videos are all well and good, but this week marks 60 days since the Pebble first hit my wrist. It’s no longer a new thing, and instead just a thing, and so I thought this would be a good time to share my thoughts about the device.
 
+<!-- more -->
+
 ## The Wait
 
- According to my Kickstarter backer history, I backed Pebble on April 13, 2012, which was only the third day of the funding campaign. Obviously I was excited about it, because it would have been even earlier if I hadn’t delayed to ask my wife if it was OK with her. We decided it could be my birthday present from her for 2012. My birthday is in August and at the time, Pebble was anticipating shipping that fall. (I admit to being notoriously difficult to shop for. These “birthday present deals” are fairly common in our house.)
+According to my Kickstarter backer history, I backed Pebble on April 13, 2012, which was only the third day of the funding campaign. Obviously I was excited about it, because it would have been even earlier if I hadn’t delayed to ask my wife if it was OK with her. We decided it could be my birthday present from her for 2012. My birthday is in August and at the time, Pebble was anticipating shipping that fall. (I admit to being notoriously difficult to shop for. These “birthday present deals” are fairly common in our house.)
 
 It took 424 days after I backed Pebble for it to land on my wrist. Despite a lot of the angst on the Pebble forums, this didn’t really bother me that much. I understood that I was backing a company, not directly purchasing a product. Being a software developer, I also understand how increasing the size of a project (in this case, the number of Pebbles that had to be produced) can lead to more than a linear increase in time.
 

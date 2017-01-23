@@ -7,7 +7,6 @@ author:
   display_name: David Boike
   email: david.boike@gmail.com
   url: http://www.make-awesome.com
-excerpt: "In the past, integrating NServiceBus into a web application typically meant  adding the fluent configuration block to the Global.asax file and then keeping a  static reference to the IBus property, because ASP.NET has not been very friendly  to dependency injection.\r\n\r\nIn ASP.NET MVC 3, Microsoft has changed that by  adding some nice abstractions around dependency resolution.&nbsp; With a little  effort, this allows us to inject NServiceBus (and its dependency injection container)  into the dependency resolution pipeline.\r\n\r\nIn this example, I will show how  to add NServiceBus to an MVC 3 web application so that common NServiceBus types  (IBus chief among them) are injected into your controller classes.\r\nNote: Karl Nilsson has written a post extending this one, showing how  to inject  NServiceBus into an ASP.NET MVC4 Web API solution, which requires just a  few minor adjustments.\r\n"
 date: '2011-02-27 13:07:00 -0600'
 date_gmt: '2011-02-27 19:07:00 -0600'
 categories:
@@ -27,6 +26,8 @@ In ASP.NET MVC 3, Microsoft has changed that by adding some nice abstractions ar
 In this example, I will show how to add NServiceBus to an MVC 3 web application so that common NServiceBus types (IBus chief among them) are injected into your controller classes.
 
 *Note: Karl Nilsson has written a post extending this one, showing how to [inject NServiceBus into an ASP.NET MVC4 Web API solution](http://coderkarl.wordpress.com/2012/03/16/injecting-nservicebus-into-asp-net-webapi/), which requires just a few minor adjustments.*
+
+<!-- more -->
 
 ## IDependencyResolver
 

@@ -7,22 +7,6 @@ author:
   display_name: David Boike
   email: david.boike@gmail.com
   url: http://www.make-awesome.com
-excerpt: <p>A common question about NServiceBus is how to use it to integrate with
-  an external partner. The requirements usually go something like this:</p>  <ul>   <li>The
-  third party will contact us via a web service, passing us a transaction identifier
-  and a collection of fields. </li>    <li>If we successfully receive the message
-  in the web service, we respond with a HTTP 200 OK status code.&#160; If they do
-  not receive the acknowledgement, they will assume a failure and attempt to retry
-  the web service later. </li>    <li>Once we receive the message from the third
-  party, we need to distribute (think publish) the contents of the message to more
-  than one internal process, each of which are completely independent of each other.
-  </li>    <li>We need to logically receive each message once and only once. In
-  other words, it would be a &ldquo;Very Bad Thing&rdquo; for one of the internal
-  subscribing processes to receive the same notification more than once. </li>
-  </ul>  <p>This was most recently asked in <a href="http:&#47;&#47;stackoverflow.com&#47;questions&#47;7768464&#47;nservicebus-design-ideas&#47;">this
-  StackOverflow question</a>, where it became difficult to explain more within
-  the 600 character comment limit. The best explanation is example code, so here it
-  is.</p>
 date: '2011-11-03 21:08:49 -0500'
 date_gmt: '2011-11-04 02:08:49 -0500'
 categories:
@@ -42,6 +26,8 @@ A common question about NServiceBus is how to use it to integrate with an extern
 -   We need to logically receive each message once and only once. In other words, it would be a “Very Bad Thing” for one of the internal subscribing processes to receive the same notification more than once.
 
 This was most recently asked in [this StackOverflow question](http://stackoverflow.com/questions/7768464/nservicebus-design-ideas/), where it became difficult to explain more within the 600 character comment limit. The best explanation is example code, so here it is.
+
+<!-- more -->
 
 Check out [NServiceBus External WebService Example on GitHub](https://github.com/DavidBoike/NServiceBus-External-WebService-Example). Here is a high-level overview of the project:
 

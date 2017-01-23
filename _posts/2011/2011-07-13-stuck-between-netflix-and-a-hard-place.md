@@ -7,27 +7,6 @@ author:
   display_name: David Boike
   email: david.boike@gmail.com
   url: http://www.make-awesome.com
-excerpt: '<p>There are two types of people in the world right now: those who are angry
-  at Netflix and those who don&rsquo;t have Netflix.</p>  <p>Like everyone else,
-  I received the email yesterday notifying me that as of September 1, 2011, my $10
-  Netflix plan that includes 1 DVD at a time and online unlimited streaming will be
-  discontinued. Instead, they offer separate plans for DVDs and for streaming.&#160;
-  1 DVD at a time will now cost $8, and unlimited streaming will now also cost $8.&#160;
-  There is no discount for bundling, so if I want to continue the same level of service,
-  it will now cost me $16 per month.</p>  <p>It&rsquo;s not the money that bothers
-  me. Prices were bound to go up.&#160; Maybe this is a pretty severe jump all at
-  once, but it&rsquo;s not completely unexpected.</p>  <p>What bothers me is the
-  false choice it represents. If money does indeed talk (and I believe it does) then
-  Netflix is asking me to choose from these options:</p>  <ol>   <li>I like getting
-  DVDs from you, but I don&rsquo;t care for your streaming service. Please take my
-  money and keep the DVDs coming.</li>    <li>I love your streaming service, but
-  DVDs in the mail is so 2003. Please take my money and let me stream to my heart&rsquo;s
-  content, but don&rsquo;t make me walk out to the mailbox.</li>    <li>I like
-  DVDs and I also like streaming, and I&rsquo;m willing to pay more money for both.</li>    <li>Netflix,
-  you suck. Cancel my subscription.</li> </ol>  <p>I don&rsquo;t believe that
-  any of these four options correctly captures my real intent:</p>  <p><strong>I
-  would be willing to pay $16 per month, maybe even more, just for the streaming service,
-  provided that the streaming selection didn&rsquo;t suck.</strong></p>'
 date: '2011-07-13 08:07:03 -0500'
 date_gmt: '2011-07-13 13:07:03 -0500'
 categories:
@@ -52,6 +31,8 @@ What bothers me is the false choice it represents. If money does indeed talk (an
 I don’t believe that any of these four options correctly captures my real intent:
 
 **I would be willing to pay \$16 per month, maybe even more, just for the streaming service, provided that the streaming selection didn’t suck.**
+
+<!-- more -->
 
 The streaming selection Netflix (or any other provider) has to offer is simply unacceptable.  When I started Netflix I was impressed by the streaming selection *under the assumption that as time progressed, its size would only increase.* But that has not been the case. As licensing contracts come and go, some movies appear and disappear from my online queue, but by and large, my opinion of the offerings as a whole has always been a resounding “Meh”.
 

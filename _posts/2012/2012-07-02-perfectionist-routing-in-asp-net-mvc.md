@@ -7,7 +7,6 @@ author:
   display_name: David Boike
   email: david.boike@gmail.com
   url: http://www.make-awesome.com
-excerpt: "I&rsquo;m not one to accept &#47;{ControllerName}&#47;{ActionName} for my  routes. Like a few members of the Stack Exchange team, I&rsquo;m  far too anal retentive about my routes to let Microsoft just handle it for me.\r\n\r\nTo  this end, I use the excellent Attribute Routing project which is also available on NuGet: just type Install-Package AttributeRouting into the Package Manager  and you&rsquo;re ready to decorate your methods with route attributes like this:\r\n\r\n\r\n[sourcecode language=\"csharp\" padlinenumbers=\"true\"]\r\n[GET(\"some-action&#47;{id}\")]\r\npublic  ActionResult SomeActionMethod(int id)\r\n{\r\n\treturn View();\r\n}\r\n[&#47;sourcecode]\r\n\r\n\r\n&nbsp;\r\n\r\nA  lot more than this is possible; for more details check out the AttributeRouting project wiki. Another nice feature during  development time is the additional route &ldquo;~&#47;routes.axd&rdquo; which shows  you, in order, all the routes registered in your application (not just those registered  by attributes) and gives you a lot of information that&rsquo;s very helpful when  debugging a routing problem.\r\n\r\nAll the benefits of attribute based routing  aside, the problem quickly becomes that pesky default route. If you accidentally  misspell a controller or action name in an ActionLink or other helper, you will  get a URL that uses that default path due to this entry in the routes configuration  in the Global.asax.cs:\r\n\r\n\r\n[sourcecode language=\"csharp\"]\r\nroutes.MapRoute(\r\n\t\"Default\",  &#47;&#47; Route name\r\n\t\"{controller}&#47;{action}&#47;{id}\", &#47;&#47; URL  with parameters\r\n\tnew { controller = \"Home\", action = \"Index\", id = UrlParameter.Optional  } &#47;&#47; Parameter defaults\r\n);\r\n[&#47;sourcecode]\r\n\r\n\r\n&nbsp;\r\n\r\nI  don&rsquo;t want my ActionLinks to use this default route. If it does, they&rsquo;re  wrong! I want to find out through an exception that I can easily detect during development,  not by silently outputting a route that doesn&rsquo;t work.\r\n\r\n"
 date: '2012-07-02 08:00:00 -0500'
 date_gmt: '2012-07-02 13:00:00 -0500'
 categories:
@@ -20,9 +19,11 @@ tags:
 - Routing
 comments: true
 ---
-I’m not one to accept /{ControllerName}/{ActionName} for my routes. [Like a few members of the Stack Exchange team](http://kevinmontrose.com/2011/07/25/why-i-love-attribute-based-routing/), I’m far too anal retentive about my routes to let Microsoft just handle it for me.
+I’m not one to accept `/{ControllerName}/{ActionName}` for my routes. [Like a few members of the Stack Exchange team](http://kevinmontrose.com/2011/07/25/why-i-love-attribute-based-routing/), I’m far too anal retentive about my routes to let Microsoft just handle it for me.
 
 To this end, I use the excellent [Attribute Routing project](https://github.com/mccalltd/AttributeRouting) which is also [available on NuGet](http://nuget.org/packages/AttributeRouting): just type Install-Package AttributeRouting into the Package Manager and you’re ready to decorate your methods with route attributes like this:
+
+<!-- more -->
 
     [GET("some-action/{id}")]
     public ActionResult SomeActionMethod(int id)

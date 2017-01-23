@@ -7,7 +7,6 @@ author:
   display_name: David Boike
   email: david.boike@gmail.com
   url: http://www.make-awesome.com
-excerpt: "By default, NServiceBus uses Fluent NHibernate to persist saga data to either  a SQL or SQLite database.  With its plugin architecture, it's relatively easy to  swap out different parts with your own implementations, but it's not always completely  obvious how to go about it.  In this article I will attempt to illustrate an attempt  to do just that.  It may not be perfectly generalized code that could be included  in the NServiceBus codebase, but I believe it gets the job done.\r\n\r\n"
 date: '2010-09-13 17:28:46 -0500'
 date_gmt: '2010-09-14 03:28:46 -0500'
 categories:
@@ -19,6 +18,8 @@ tags:
 comments: true
 ---
 By default, NServiceBus uses Fluent NHibernate to persist saga data to either a SQL or SQLite database. With its plugin architecture, it's relatively easy to swap out different parts with your own implementations, but it's not always completely obvious how to go about it. In this article I will attempt to illustrate an attempt to do just that. It may not be perfectly generalized code that could be included in the NServiceBus codebase, but I believe it gets the job done.
+
+<!-- more -->
 
 Many thanks to [Andreas Öhlund](http://andreasohlund.blogspot.com/) for all his help on the [NServiceBus Group](http://tech.groups.yahoo.com/group/nservicebus/) helping me through this.
 

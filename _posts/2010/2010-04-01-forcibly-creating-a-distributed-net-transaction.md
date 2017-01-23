@@ -42,6 +42,8 @@ This code blew up when I tried to send the message to the bus.
 
 The problem is that because we still have SQL 2000 databases that cannot enlist in System.Transactions transactions without the performance penalty of distributed transactions, our database library uses a transaction adapter class that magically uses a SqlTransaction under the hood in a very lightweight manner. The error is the result of this library not being able to promote a local transaction to distributed, because MSMQ (used under the covers by NServiceBus) can only use distributed transactions.
 
+<!-- more -->
+
 In my search I ran across [Davy Brion's](http://davybrion.com/blog/) post [MSDTC Woes With NServiceBus And NHibernate](http://davybrion.com/blog/2010/03/msdtc-woes-with-nservicebus-and-nhibernate/) in which he shows a similar problem using NHibernate, database calls, and NServiceBus calls. His solution (which he calls a hack but I think is pretty elegant) is to enlist a durable resource manager at the beginning of the transaction that does nothing except to force the transaction to be distributed from the onset.
 
 The only thing I didn't like was that it was a lot of code to remember to put as the first line of a transaction. So, I offer a simplification to his method:

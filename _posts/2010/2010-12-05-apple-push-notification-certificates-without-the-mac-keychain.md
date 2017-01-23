@@ -7,7 +7,6 @@ author:
   display_name: David Boike
   email: david.boike@gmail.com
   url: http://www.make-awesome.com
-excerpt: "If you want to send push notifications to an iPhone application from  a .NET platform, the Mac Keychain turns out to be a major buzzkill.&#160;  In order to get a .p12 file suitable for use with the apns-sharp  push notifications library in the Keychain, you have to perform a complex,  manual (read error-prone) procedure that gets really annoying, especially if you  have many apps to provision for push notifications, as I do.  Wouldn't  it be great if you could do this in C#, on Windows, without a Mac or the Keychain?&#160;  Well, you can!  \r\n\r\n"
 date: '2010-12-05 21:34:45 -0600'
 date_gmt: '2010-12-06 03:34:45 -0600'
 categories:
@@ -24,6 +23,8 @@ comments: true
 If you want to send push notifications to an iPhone application from a .NET platform, the Mac Keychain turns out to be a *major* buzzkill.  In order to get a .p12 file suitable for use with the [apns-sharp push notifications library](http://code.google.com/p/apns-sharp/) in the Keychain, you have to perform a complex, manual (read error-prone) procedure that gets really annoying, especially if you have many apps to provision for push notifications, as I do.
 
 Wouldn't it be great if you could do this in C\#, on Windows, without a Mac or the Keychain?  Well, you can!
+
+<!-- more -->
 
 ## How the Keychain Works
 

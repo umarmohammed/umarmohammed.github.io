@@ -7,7 +7,6 @@ author:
   display_name: David Boike
   email: david.boike@gmail.com
   url: http://www.make-awesome.com
-excerpt: "Switching from Subversion to Mercurial with Kiln  was one of the best things we ever did, but it wasn't without its pain points. The  biggest problem is when you have websites that can't be hosted by the integrated  Visual Studio web server (Cassini) and require complex IIS configurations that can't  be version-controlled.\r\n\r\nWith a distributed  version control system (DVCS) such as Mercurial, you're supposed to clone  branch repositories all over the place, but redoing the IIS configuration can be  a major drag.\r\n\r\nLuckily, IIS7 comes with Microsoft.Web.Administration.dll,  a managed assembly that allows you to automate server administration tasks, something  that was next to impossible in IIS6.\r\n\r\n"
 date: '2010-12-19 15:23:11 -0600'
 date_gmt: '2010-12-19 21:23:11 -0600'
 categories:
@@ -26,6 +25,8 @@ Switching from Subversion to Mercurial with [Kiln](http://www.fogcreek.com/kiln/
 With a [distributed version control system (DVCS)](http://en.wikipedia.org/wiki/Distributed_Version_Control_System) such as Mercurial, you're supposed to clone branch repositories all over the place, but redoing the IIS configuration can be a major drag.
 
 Luckily, IIS7 comes with Microsoft.Web.Administration.dll, a managed assembly that allows you to automate server administration tasks, something that was next to impossible in IIS6.
+
+<!-- more -->
 
 ## The Plan
 

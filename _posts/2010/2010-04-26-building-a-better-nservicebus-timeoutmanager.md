@@ -23,6 +23,8 @@ comments: true
 
 For a complete discussion, check out the message thread [Timeout Manager process causes heavy disk IO](http://tech.groups.yahoo.com/group/nservicebus/message/5117), or for a quicker read, here are some of the limitations of the TimeoutManager included with NServiceBus 2.0:
 
+<!-- more -->
+
 -   Operates by doing a short thread sleep, and then resending the message back to the same queue until it expires and can be sent back.  This creates a lot of disk I/O in the Microsoft Message Queue system from the message being written back to persistent storage many times per second.
 -   In order to achieve better performance, you must increase the number of milliseconds sleep, but this has the side effect of decreasing time resolution.  It might be OK to sleep for 10 seconds if you're dealing with a timeout of 20 minutes, but it's unacceptable for a timeout of less than a minute.  What if the Timeout Manager needs to handle both?
 

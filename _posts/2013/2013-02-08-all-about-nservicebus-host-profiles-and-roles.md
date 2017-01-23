@@ -7,7 +7,6 @@ author:
   display_name: David Boike
   email: david.boike@gmail.com
   url: http://www.make-awesome.com
-excerpt: "The NServiceBus Host process is a pretty amazing piece of software that  hosts your message handlers, can be run from the command line or installed as a  Windows service, and is supremely extensible. This is a great strength for NServiceBus  but it can also be a little overwhelming for the developer just starting to wade  into the great pool of service bus logistics.\r\n\r\nMuch of how an endpoint will  configure itself is based on Profiles and Roles:\r\n\r\n\tProfile  &ndash; controls the environment and features the endpoint is supposed to run with.  These are set at the command line by passing the class name (or names) of the desired  profile (or profiles) like &ldquo;NServiceBus.Host.exe NServiceBus.Integration&rdquo;.  Because this is set at run-time, this allows the same collection of code to run  in different configurations depending on environment.\r\n\tRole  &ndash; controls what services the endpoint will need based on how it will interact  with other services. There are 3 defined roles: AsA_Client, AsA_Server, and AsA_Publisher,  and these are set in code, so these are static for an endpoint.\r\n\r\nIn  this blog post I will try to spell out everything that these profiles and roles  do, based on my experience and source code snooping with Reflector.  Use this as a quick reference so you don&rsquo;t have to go hunting through reflected  source yourself.\r\n\r\nNote that all of this information is based on NServiceBus  3.3.4. I&rsquo;m positive that things will change as new versions are released.\r\n\r\n"
 date: '2013-02-08 03:00:42 -0600'
 date_gmt: '2013-02-08 09:00:42 -0600'
 categories:
@@ -27,6 +26,8 @@ Much of how an endpoint will configure itself is based on Profiles and Roles:
 -   **Role** – controls what services the endpoint will need based on how it will interact with other services. There are 3 defined roles: AsA\_Client, AsA\_Server, and AsA\_Publisher, and these are set in code, so these are static for an endpoint.
 
  In this blog post I will try to spell out everything that these profiles and roles do, based on my experience and source code snooping with [Reflector](http://www.red-gate.com/products/dotnet-development/reflector/). Use this as a quick reference so you don’t have to go hunting through reflected source yourself.
+
+ <!-- more -->
 
 Note that all of this information is based on NServiceBus 3.3.4. I’m positive that things will change as new versions are released.
 

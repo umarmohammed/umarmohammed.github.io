@@ -7,7 +7,6 @@ author:
   display_name: David Boike
   email: david.boike@gmail.com
   url: http://www.make-awesome.com
-excerpt: "I've been an Apple fanboy for years.  I grew up programming in BASIC on  an Apple IIGS.  I love my iPhone to death.  However, I am not a member of the Church  of Jobs that believes Steve can do no wrong.  Now I'm a software developer and I  appreciate a good, clean, easy to use API, and Apple falls short.\r\n\r\nBut fear  not Apple!  You may already have two push notification command formats on the books,  but keep reading and I'll suggest a third that won't leave developers frustrated  and angry with you.\r\n\r\n"
 date: '2010-10-19 22:26:28 -0500'
 date_gmt: '2010-10-20 03:26:28 -0500'
 categories:
@@ -23,6 +22,8 @@ comments: true
 I've been an Apple fanboy for years. I grew up programming in BASIC on an Apple IIGS. I love my iPhone to death. However, I am not a member of the Church of Jobs that believes Steve can do no wrong. Now I'm a software developer and I appreciate a good, clean, easy to use API, and Apple falls short.
 
 But fear not Apple! You may already have two push notification command formats on the books, but keep reading and I'll suggest a third that won't leave developers frustrated and angry with you.
+
+<!-- more -->
 
 ### Basics
 

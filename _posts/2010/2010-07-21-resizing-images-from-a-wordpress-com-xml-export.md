@@ -7,7 +7,6 @@ author:
   display_name: David Boike
   email: david.boike@gmail.com
   url: http://www.make-awesome.com
-excerpt: "Find out how to preprocess a WordPress export file before import to avoid  multi-megapixel images in the post body slowing down page loads.\r\n\r\n"
 date: '2010-07-21 16:12:17 -0500'
 date_gmt: '2010-07-22 02:12:17 -0500'
 categories:
@@ -19,21 +18,12 @@ tags:
 - regular expressions
 comments: true
 ---
-*Find out how to preprocess a WordPress export file before import to avoid multi-megapixel images in the post body slowing down page loads.*
 
 **Note: Thanks to a suggestion from Asbjørn Ulsberg, I have made this source code available as a [GitHub repository](https://github.com/DavidBoike/WordPressExportConverter). As I wrote it, it's really a single-use tool - it even has my user path hard-coded. Please feel free to fork it and add whatever you like!**
 
 My wife is an incredibly talented woman. While she's not working her day job at a magazine publisher, she makes and sells fondant-covered cakes, cupcakes, cookies, and other goodies. Let me tell you how difficult it is to try losing weight when there are constantly cake scraps lying around!
 
 If you live in the Twin Cities area or are just plain curious, check out her website, [Sweets by Natalie Kay](http://www.sweetsbynataliekay.com). Some of my favorites: a [Chocolate Cherry Chip Transformer Cake](http://www.sweetsbynataliekay.com/2010/05/chocolate-cherry-chip-transformer-cake/), and this [Mario-Kart inspired birthday cake](http://www.sweetsbynataliekay.com/2009/06/erics-birthday/).
-
-<table width="100%" border="0" style=><tr><td width="50%" align="center">
-<a href="http://www.sweetsbynataliekay.com/2010/05/chocolate-cherry-chip-transformer-cake/"><img src="/images/img_2016.jpg" alt="Transformers Cake" /></a>
-</td><td width="50%" align="center">
-<a href="http://www.sweetsbynataliekay.com/2009/06/erics-birthday/"><img src="/images/photo2.jpg" alt="Mario Kart Cake"/></a>
-</td></tr></table>
-
-  
 
 Her site is a WordPress blog that she started out its life hosted on [wordpress.com](http://wordpress.com), which is nice but doesn't give a lot of flexibility over themes and layout. When she wanted more flexibility, the task of converting the content to a different hosting provider fell to the family IT director.
 
@@ -42,6 +32,8 @@ WordPress contains export and import functionality, but a problem quickly emerge
 My wife captured these images with her 10-megapixel D-SLR camera. These are not small files. The images (2-4 MB each) would load at a crawl, slowing down the entire page.
 
 Programmer husband to the rescue! It's nice to be needed.
+
+<!-- more -->
 
 The first hurdle was getting the XML export file to load at all, as WordPress exports invalid XML, a fact that nearly made me gag!
 

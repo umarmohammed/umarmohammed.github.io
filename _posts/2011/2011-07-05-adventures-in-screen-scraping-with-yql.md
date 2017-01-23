@@ -7,7 +7,6 @@ author:
   display_name: David Boike
   email: david.boike@gmail.com
   url: http://www.make-awesome.com
-excerpt: "When coding for work, everything of course has to be done the Right Way&reg;.  \ This isn't always super exciting, so it is sometimes liberating to cut loose and  work on a side project that mashes together a whole bunch of technologies without  worrying too much about stability, reliability, scalability, or even if it will  continue to run tomorrow.  These R&D projects will never have even a single  line of code directly pushed into even a development repository, but more often  than not I find that I take concepts learned and tested during these coding sessions  and apply them in some later project.  Even if the entire project is thrown away  in relatively short order, some concept of value survives for the long haul.\r\n\r\nPlus,  it's just fun.\r\n\r\nRecently my wife and I got the very exciting (and scary!)  news that we were pregnant with our first child.  The little guy or girl's arrival  is still over 5 months away, but already we're wrestling with tons of difficult  questions, and one particularly overwhelming one is \"How are we going to decide  where to send our child for day care?\"\r\n\r\nWe live in the great state of Minnesota  where the Department of Human Services maintains a searchable Licensing  Info Lookup website for all sorts of things, including (but not limited  to) family child care.  Anyone with a child care license can be found here, along  with address, phone number, if they can accept newborn infants and how many, etc.\r\n\r\nJust  one problem.  We live on the border of two big suburbs, so you do a search for both  cities and together you get over 150 results, and no map.\r\n\r\nThis  is where my inner geek starts to get excited.  I've got a copy of Visual Studio.  \ I can fix this problem.  Let's do it.\r\n\r\n"
 date: '2011-07-05 20:33:26 -0500'
 date_gmt: '2011-07-06 01:33:26 -0500'
 categories:
@@ -31,6 +30,8 @@ We live in the great state of Minnesota where the Department of Human Services m
 Just one problem. We live on the border of two big suburbs, so you do a search for both cities and together you get over 150 results, and **no map**.
 
 This is where my inner geek starts to get excited. I've got a copy of Visual Studio. I can fix this problem. Let's do it.
+
+<!-- more -->
 
 ### Screen Scraping with YQL
 
