@@ -38,6 +38,13 @@ paginate_path: "page/:num"
 category_dir: categories
 excerpt_separator: "<!-- more -->"
 
+exclude:
+  - CNAME
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - RakeFile
+
 gems:
   - jekyll-redirect-from
   - jekyll-sitemap
