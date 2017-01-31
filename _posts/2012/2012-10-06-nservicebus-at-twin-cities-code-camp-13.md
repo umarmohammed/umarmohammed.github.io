@@ -7,7 +7,6 @@ author:
   display_name: David Boike
   email: david.boike@gmail.com
   url: http://www.make-awesome.com
-excerpt: "Today I had a great time presenting Enterprise Service Bus Development with  NServiceBus at the Fall 2012 Twin Cities Code Camp. I wasn&rsquo;t sure before presenting  if we would have enough time to get into sagas, and as it turned out, we ran out  of time right in the middle!\r\n\r\nSo as promised, I finished the saga code and  pushed it all to GitHub. Here is the link to my Twin Cities Code Camp 13 NServiceBus Example Code. Please  feel free to clone it and explore!\r\n"
 date: '2012-10-06 22:57:23 -0500'
 date_gmt: '2012-10-07 03:57:23 -0500'
 categories:
@@ -22,6 +21,8 @@ comments: true
 Today I had a great time presenting Enterprise Service Bus Development with NServiceBus at the Fall 2012 [Twin Cities Code Camp](http://www.twincitiescodecamp.com/TCCC/Default.aspx). I wasn’t sure before presenting if we would have enough time to get into sagas, and as it turned out, we ran out of time right in the middle!
 
 So as promised, I finished the saga code and pushed it all to GitHub. Here is the link to my [Twin Cities Code Camp 13 NServiceBus Example Code](https://github.com/DavidBoike/TCCC13Demo). Please feel free to clone it and explore!
+
+<!-- more -->
 
 ## Review: Session Rundown
 

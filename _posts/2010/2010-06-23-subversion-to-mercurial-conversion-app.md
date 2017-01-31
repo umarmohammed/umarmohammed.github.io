@@ -29,6 +29,8 @@ Of course, Kiln is based on Mercurial, and in order to convert, we have a fairly
 
 Fog Creek provides an import tool that is pretty impressive, since it is able to do import from half a dozen different existing source control systems (including just a pile of files on disk) and does it pretty well. However, it didn't meet our needs in a few areas:
 
+<!-- more -->
+
 -   It doesn't take advantage of author mapping offered by the hg convert utility. Our current Subversion server (VisualSVN Server) uses our Windows credentials, which are based on an archaic corporate naming scheme, so we really would like to map these to our real names.
 -   The conversion is imperfect, resulting in some directories and files that aren't in the head of the Subversion trunk turning up in the converted Mercurial repository. These are directories that existed long ago, before a massive repository reorganization moved them elsewhere. In any case, we don't want them, and we don't necessarily want to hunt them down manually.
 -   The conversion doesn't convert Subversion's svn:ignore properties into an .hgignore file. When you're developing with Visual Studio 2008 and a large solution, that results in a bunch of untracked bin and obj directories.

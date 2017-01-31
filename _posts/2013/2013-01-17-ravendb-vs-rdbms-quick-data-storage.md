@@ -7,7 +7,6 @@ author:
   display_name: David Boike
   email: david.boike@gmail.com
   url: http://www.make-awesome.com
-excerpt: "Recently Charlie Barker (@Porkstone on Twitter) asked me what I felt were pros  and cons of using RavenDB over a standard relational database. In this series of  posts I highlight the differences between RavenDB and a RDBMS that I have experienced  after completing three projects that incorporate Raven in some capacity.\r\nRavenDB  was built for quick data storage. It promises zero-friction data storage and it  definitely delivers. SQL Server, on the other hand, promises that you're probably  going to need some form of object-relational mapping software.\r\n\r\nOne of the  projects in which I used Raven began its life backed by SQL Server 2008. The problem  was that it was always my lowest priority, getting just a few hours of attention  each week before some bigger fish raised its head and had to be fried. In that short  time each week in which I worked on the SQL version of the project, usually I would  spend my time banging my head against SQL Server trying to just deal with the data  access. There was very little forward progress on the actual business logic of the  application.\r\n\r\n"
 date: '2013-01-17 08:00:31 -0600'
 date_gmt: '2013-01-17 14:00:31 -0600'
 categories:
@@ -23,6 +22,8 @@ comments: true
  RavenDB was built for quick data storage. It promises zero-friction data storage and it definitely delivers. SQL Server, on the other hand, promises that you're probably going to need some form of object-relational mapping software.
 
 One of the projects in which I used Raven began its life backed by SQL Server 2008. The problem was that it was always my lowest priority, getting just a few hours of attention each week before some bigger fish raised its head and had to be fried. In that short time each week in which I worked on the SQL version of the project, usually I would spend my time banging my head against SQL Server trying to just deal with the data access. There was very little forward progress on the actual business logic of the application.
+
+<!-- more -->
 
 I begged and pleaded with my manager to switch to RavenDB so that we could take advantage of the zero-friction data storage. At first he was resistant, but after a lot of very persistent lobbying on my part, he relented. I spent just 2 days converting the entirety of the application to Raven. This wasn't without hurdles, obviously, but those hurdles were because of things that SQL Server had forced me to do that I had to simplify and revert to an easier, *more intuitive* form in order to work with Raven.
 

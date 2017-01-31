@@ -6,10 +6,14 @@ layout: default
 <div itemscope itemtype="http://schema.org/Blog">
 {% for post in paginator.posts %}
 {% unless post.redirect %}
-{% assign content = post.content %}
+{% assign content = post.excerpt %}
     <article class="post" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
         {% include article.html %}
+        {% if post.excerpt.size < post.content.size %}
+            <p class="read-more"><a href="{{post.url}}">Read more →</a></p>
+        {% endif %}
     </article>
+
 {% endunless %}
 {% endfor %}
 </div>

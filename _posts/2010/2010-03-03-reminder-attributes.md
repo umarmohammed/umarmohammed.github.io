@@ -27,6 +27,8 @@ In the meantime, we have features that would benefit from [Common Table Expressi
 
 Enter reminder attributes.
 
+<!-- more -->
+
     public class Sql2008Attribute : Attribute
     {
         public string Description { get; private set; }

@@ -22,6 +22,8 @@ I recently saw links to these two videos (one pro-HTC EVO, the other pro-iPhone)
 
 While these vids are kind of funny to watch, I was instantly teleported back across time and space to about a decade ago to the height (at least, in my experience) of the Mac/PC flame war. Mac users were stupid because you couldn't do anything for business or run Word. Windows users were stupid because their computers couldn't do graphics and were soulless idiot boxes that couldn't handle file names longer than 8.3.
 
+<!-- more -->
+
 This was of course before Apple had life infused back into it by Steve Jobs' return, along with the successes of the iMac and iPod, and before Windows had some of its shine taken off by the embarrassment that was Vista. However, by now, most of those differences have largely evaporated. You can use Word on both. You can do graphics on both and you can do business applications on both, and [Get a Mac](http://en.wikipedia.org/wiki/Get_a_Mac) advertisements (which have now been canceled) and their Windows counterparts aside, it really doesn't matter - people use what they like and it's OK.
 
 So now the big flame war has been miniaturized to fit in our pocket in the form of smartphones, and it's equally as stupid.

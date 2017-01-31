@@ -7,7 +7,6 @@ author:
   display_name: David Boike
   email: david.boike@gmail.com
   url: http://www.make-awesome.com
-excerpt: "I thought I would two little tricks that are recent favorites of mine.\r\n\r\nI've  been doing a lot of client-side development with Backbone.js, Twitter Bootstrap, and LESS. Together they are powerful  tools for creating a lot of beautiful client-side UI with complex interactions.\r\n\r\nThe  two tricks I want to share are a CSS3 fade-in, and Trello-inspired drag-n-drop LESS mix-in.\r\n\r\n"
 date: '2012-12-18 20:00:01 -0600'
 date_gmt: '2012-12-19 02:00:01 -0600'
 categories:
@@ -27,6 +26,8 @@ I thought I would two little tricks that are recent favorites of mine.
 I've been doing a lot of client-side development with [Backbone.js](http://backbonejs.org/), [Twitter Bootstrap](http://twitter.github.com/bootstrap/), and LESS. Together they are powerful tools for creating a lot of beautiful client-side UI with complex interactions.
 
 The two tricks I want to share are a CSS3 fade-in, and [Trello-inspired](https://trello.com/) drag-n-drop LESS mix-in.
+
+<!-- more -->
 
 # CSS3 Fade-In
 

@@ -23,7 +23,9 @@ For those unfamiliar, the short version (stolen from the Wikipedia linked above)
 
 > A **QR Code** is a [matrix code](http://en.wikipedia.org/wiki/Barcode#Matrix_.282D.29_barcodes "Barcode") (or two-dimensional [bar code](http://en.wikipedia.org/wiki/Bar_code "Bar code")) created by Japanese corporation [Denso-Wave](http://en.wikipedia.org/wiki/Denso "Denso") in 1994. The "QR" is derived from "Quick Response", as the creator intended the code to allow its contents to be decoded at high speed.
 
- My personal opinion, which I espoused during that meeting, was that QR codes are, for lack of a better word, stupid, that they would never appear in anything mainstream, had no potential return on investment, and that generally they were a complete and utter waste of time and we should go out of our way to avoid allocating *any*development time toward it.
+My personal opinion, which I espoused during that meeting, was that QR codes are, for lack of a better word, stupid, that they would never appear in anything mainstream, had no potential return on investment, and that generally they were a complete and utter waste of time and we should go out of our way to avoid allocating *any* development time toward it.
+
+<!-- more -->
 
 And so what do I see in the Sunday paper just a few days later?  [Best Buy](http://www.bestbuy.com) included a QR code on the front page of their Sunday ad.  Thanks Best Buy.  Big help.
 

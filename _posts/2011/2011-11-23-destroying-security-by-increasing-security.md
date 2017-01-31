@@ -33,6 +33,8 @@ Here are the password requirements Steve has to live with:
 -   The change periods (how often you must reset) vary.
 -   You may not use any password you have used in the last year.
 
+<!-- more -->
+
 Seriously, did they just check every available box in the security setup? They may think they’re making things more secure, but in fact, the addition of all these options, especially with the addition of the very restrictive length requirement (7 or 8 characters, really?) conspires to *drastically reduce security*.
 
 It reminded me a lot of this [XKCD comic](http://xkcd.com/936/):

@@ -42,4 +42,4 @@ What if we could do this?
     public string MyString { get; set; default "initial value"; }
     public List MyList { get; set; default new List(); }
 
- It would personally save me a LOT of time.
+It would personally save me a LOT of time.

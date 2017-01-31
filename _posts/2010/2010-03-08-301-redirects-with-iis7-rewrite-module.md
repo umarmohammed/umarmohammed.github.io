@@ -26,6 +26,8 @@ People with Apache webservers have long had the ability to perform 301 redirects
 
 At first I tried redirecting purely with PHP inside the bounds of WordPress.  I tried multiple redirection plugins, none of which seemed to work.  They would redirect my site, but when I checked with [Fiddler](http://www.fiddler2.com/fiddler2/) it would always be a 302 redirect.  Unacceptable.
 
+<!-- more -->
+
 I even tried monkeying directly with WordPress's index.php file, which I was not happy about doing because I knew it would make upgrading WordPress more difficult.  Even with the following PHP-based redirect as the first few lines of the PHP file...
 
     // Note, didn't work for me, provided for reference only

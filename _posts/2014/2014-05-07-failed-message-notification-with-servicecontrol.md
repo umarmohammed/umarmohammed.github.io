@@ -7,7 +7,6 @@ author:
   display_name: David Boike
   email: david.boike@gmail.com
   url: http://www.make-awesome.com
-excerpt: "In my post Distributed  System Monitoring Done Right, I mentioned in passing how ServicePulse  doesn't ship with any built-in notification system for failed messages, but that  you could easily build a system to send an email (or SMS, or carrier pigeon) to  do so.\r\n\r\nIn this post I'll show you how."
 date: '2014-05-07 12:26:20 -0500'
 date_gmt: '2014-05-07 17:26:20 -0500'
 categories:
@@ -21,6 +20,8 @@ comments: true
 In my post [Distributed System Monitoring Done Right](http://www.make-awesome.com/2014/04/distributed-system-monitoring-done-right/), I mentioned in passing how [ServicePulse](http://particular.net/servicepulse) doesn't ship with any built-in notification system for failed messages, but that you could easily build a system to send an email (or SMS, or carrier pigeon) to do so.
 
 In this post I'll show you how.
+
+<!-- more -->
 
 First, create a new Class Project called ErrorNotify, and turn it into an endpoint by including the [NServiceBus.Host NuGet package](http://www.nuget.org/packages/NServiceBus.Host).
 

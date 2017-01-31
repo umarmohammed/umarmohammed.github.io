@@ -566,3 +566,9 @@ pre {
 .related-posts {
     margin-top: 3em;
 }
+
+.read-more {
+    margin-top: 2em;
+    font-weight: bold;
+    font-size: 16px;
+}

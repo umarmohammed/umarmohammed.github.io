@@ -7,9 +7,6 @@ author:
   display_name: David Boike
   email: david.boike@gmail.com
   url: http://www.make-awesome.com
-excerpt: |+
-  <p>If you run an ASP.NET website with any non-trivial amount of traffic, the last thing you want to do is try to load an external resource with a web request. Even if you cache it, you've taken on that external source as a dependency to your system, which means that your website is only as reliable as the external source you depend on.</p>  <p>The primary strategy I've seen to cope with this is to request the data from the remote service on the first request from the web tier, cache it locally, and then have a background process periodically refresh that cache so that subsequent requests can use locally cached data.</p>  <p>Even with this background-updated cache, eventually the external resource will suffer some sort of issue. The data in the cache grows old and is invalidated, and then the web tier starts requesting the data again, except now, 100 different requests try to open 100 different connections to the remote service to get the exact same data, because either they all fail or none of them can complete quickly enough to store the cache item for the other threads to use. The Thread Pool fills up, and ASP.NET hangs its head and gives up.</p>  <h2>The Solution</h2>  <p>Let's assume that we are talking about a current weather tease that is a small part of a very large page, and that all our current weather information for the end-user's zip code comes to us from an external provider.</p>  <p>So how do we avoid this mess? We can do it quite handily with a little <a href="http:&#47;&#47;www.nservicebus.com">NServiceBus</a> and <a href="http:&#47;&#47;jquery.com&#47;">jQuery</a>.</p>
-
 date: '2012-03-12 08:00:00 -0500'
 date_gmt: '2012-03-12 13:00:00 -0500'
 categories:
@@ -29,6 +26,8 @@ If you run an ASP.NET website with any non-trivial amount of traffic, the last t
 The primary strategy I've seen to cope with this is to request the data from the remote service on the first request from the web tier, cache it locally, and then have a background process periodically refresh that cache so that subsequent requests can use locally cached data.
 
 Even with this background-updated cache, eventually the external resource will suffer some sort of issue. The data in the cache grows old and is invalidated, and then the web tier starts requesting the data again, except now, 100 different requests try to open 100 different connections to the remote service to get the exact same data, because either they all fail or none of them can complete quickly enough to store the cache item for the other threads to use. The Thread Pool fills up, and ASP.NET hangs its head and gives up.
+
+<!-- more -->
 
 ## The Solution
 

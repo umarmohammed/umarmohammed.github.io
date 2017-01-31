@@ -7,7 +7,6 @@ author:
   display_name: David Boike
   email: david.boike@gmail.com
   url: http://www.make-awesome.com
-excerpt: "Recently Romiko Derbynew  was reading&nbsp;my book, Learning  NServiceBus, and noticed a contradiction between the manuscript and the  included source code:\r\nIn the Sample for DependecyInjection in the  book, the code is:\r\n\r\npublic class ConfigureDependencyInjection : NServiceBus.IWantCustomInitialization\r\n\r\nHowever  in the book, is says\r\n\r\nIWantCustomInitialization should be implemented only  on the class that implements IConfigureThisEndpoint and allows  you to perform customizations that are unique to that endpoint.\r\nOf  course I could wax philosophic about the tight deadline of book publishing, or how  difficult it is to keep the sample code in sync with the manuscript, or how I probably  wrote that part of the code and that part of the manuscript on different days on  different pre-betas of NServiceBus 4.0, but what it comes down to at the end of  the day is #FAIL!\r\n\r\nSo  here&rsquo;s the real scoop, or at least, updated information as I see it and would  recommend now, circa NServiceBus 4.6.1.\r\n\r\n"
 date: '2014-05-27 23:12:34 -0500'
 date_gmt: '2014-05-28 04:12:34 -0500'
 categories:
@@ -26,11 +25,13 @@ Recently [Romiko Derbynew](http://romikoderbynew.com/) was reading my book, [Le
 >
 > However in the book, is says
 >
-> IWantCustomInitialization should be implemented **only on the class** that implements **IConfigureThisEndpoint**and allows you to perform customizations that are unique to that endpoint.
+> IWantCustomInitialization should be implemented **only on the class** that implements **IConfigureThisEndpoint** and allows you to perform customizations that are unique to that endpoint.
 
  Of course I could wax philosophic about the tight deadline of book publishing, or how difficult it is to keep the sample code in sync with the manuscript, or how I probably wrote that part of the code and that part of the manuscript on different days on different pre-betas of NServiceBus 4.0, but what it comes down to at the end of the day is [\#FAIL](http://failblog.cheezburger.com/)!
 
 So here’s the real scoop, or at least, updated information as I see it and would recommend now, circa NServiceBus 4.6.1.
+
+<!-- more -->
 
 The part of the book referenced comes from Chapter 5: Advanced Messaging, where I am discussing the various general extension points in the NServiceBus framework that you can hook into by implementing certain marker interfaces, and then at startup, NServiceBus finds all these classes via assembly scanning and executes them at the proper time.
 

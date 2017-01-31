@@ -7,7 +7,6 @@ author:
   display_name: David Boike
   email: david.boike@gmail.com
   url: http://www.make-awesome.com
-excerpt: "Sometimes I need a rolling counter, especially in diagnostics-related scenarios.  \ How many requests have occurred in the last hour?  It's not okay for a counter  object to drop out of cache every hour, because the value will be meaningless if  I happen to observe it at (Cache Drop + 3 minutes).\r\n\r\nA real rolling counter  is needed in these situations.  The counter must increment, and then at some point  those hits must drop off.\r\n\r\nBut especially in these situations, low impact  is the key.  A Queue where each item contains a timestamp is too unruly.  Too many  objects are created and too much cleanup is required.  Less is more.\r\n\r\n"
 date: '2011-04-30 14:05:07 -0500'
 date_gmt: '2011-04-30 19:05:07 -0500'
 categories:
@@ -24,6 +23,8 @@ Sometimes I need a rolling counter, especially in diagnostics-related scenarios.
 A real rolling counter is needed in these situations. The counter must increment, and then at some point those hits must drop off.
 
 But especially in these situations, low impact is the key. A Queue where each item contains a timestamp is too unruly. Too many objects are created and too much cleanup is required. Less is more.
+
+<!-- more -->
 
 Here is a rolling counter class that is as low-impact as I can make it.
 

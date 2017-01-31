@@ -24,6 +24,8 @@ I've been updating our online store back end jobs, which were still using legacy
 
 The new code threw an exception today from the e-commerce provider.  We were attempting to capture an amount that was more than what was authorized on the card.
 
+<!-- more -->
+
 In reality, after tax, the order total was \$21.625 after tax, which is stupid on its face to have fractional pennies, but that code is even nastier and I have very limited control over it.  When the store ran the credit authorization, it rounded down to \$21.62.  When my new code ran, it was rounded up (as most 5th graders would expect, you round 0.5 up) to \$21.63, hence the failure over a penny.
 
 I dug up old code and found that the store authorization was using:

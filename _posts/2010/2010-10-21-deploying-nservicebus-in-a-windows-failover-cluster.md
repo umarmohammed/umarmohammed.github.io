@@ -7,7 +7,6 @@ author:
   display_name: David Boike
   email: david.boike@gmail.com
   url: http://www.make-awesome.com
-excerpt: "NServiceBus is made from the ground up for scalability and reliability,  but to take advantage of these features, you need to deploy it in a Windows Failover  Cluster.  Unfortunately, information on how to do this effectively is, as yet, incomplete  and scattered.  This article will describe the process for deploying NServiceBus  in a failover cluster.\r\n\r\n"
 date: '2010-10-21 10:30:11 -0500'
 date_gmt: '2010-10-21 15:30:11 -0500'
 categories:
@@ -22,6 +21,8 @@ tags:
 comments: true
 ---
 NServiceBus is made from the ground up for scalability and reliability, but to take advantage of these features, you need to deploy it in a Windows Failover Cluster. Unfortunately, information on how to do this effectively is, as yet, incomplete and scattered. This article will describe the process for deploying NServiceBus in a failover cluster.
+
+<!-- more -->
 
 What this article does *not* cover is the generic setup of a failover cluster itself. There are other, better resources for that. Try [Creating a Cluster in Windows Server 2008](http://blogs.msdn.com/b/clustering/archive/2008/01/18/7151154.aspx) to start. The focus here is the setup related to NServiceBus.
 

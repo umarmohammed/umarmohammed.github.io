@@ -25,6 +25,8 @@ I realized that a better implementation would be to separate out the storage usi
 
 Also, I refactored the MsmqTimeoutStorage class into a base class that's concerned with the in-memory timeout handling, and the superclass that adds in the actual storage implementation with MSMQ.
 
+<!-- more -->
+
 This way, switching to database storage would be as easy as creating a class that inherits TimeoutStorageProvider (more on the generic parameter in a bit) and implements the following methods:
 
     public abstract void Init();

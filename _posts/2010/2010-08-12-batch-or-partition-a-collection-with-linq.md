@@ -7,7 +7,6 @@ author:
   display_name: David Boike
   email: david.boike@gmail.com
   url: http://www.make-awesome.com
-excerpt: "Since Generics were first introduced with .NET 2.0 I have had a utility  method I used to batch a list into smaller lists of a fixed size, usually to batch  up a bunch of database inserts into manageable groups of 10 or 25 or so.\r\n\r\nToday  I needed to do the same thing except I will be dealing with a potentially VERY large  data set with some fairly complex computations built in.  Forcing it all into a  list and batching the list means I will have to hold all of that garbage in memory.\r\n\r\nSo  I started looking for a LINQ implementation that would deal with only one batch  at a time and keep the memory footprint low.  "
 date: '2010-08-12 16:26:24 -0500'
 date_gmt: '2010-08-12 21:26:24 -0500'
 categories:
@@ -22,7 +21,7 @@ Since Generics were first introduced with .NET 2.0 I have had a utility method I
 
 Today I needed to do the same thing except I will be dealing with a potentially VERY large data set with some fairly complex computations built in. Forcing it all into a list and batching the list means I will have to hold all of that garbage in memory.
 
-So I started looking for a LINQ implementation that would deal with only one batch at a time and keep the memory footprint low. I found very little - everything under a [Google search for "LINQ batch"](http://www.google.com/search?q=LINQ+batch) seemed to be about operations with LINQ-to-SQL. Don't care.
+So I started looking for a LINQ implementation that would deal with only one batch at a time and keep the memory footprint low. <!-- more --> I found very little - everything under a [Google search for "LINQ batch"](http://www.google.com/search?q=LINQ+batch) seemed to be about operations with LINQ-to-SQL. Don't care.
 
 I found [Split a collection into n parts with LINQ?](http://stackoverflow.com/questions/438188/split-a-collection-into-n-parts-with-linq) on Stack Overflow but was horrified by some of the algorithms there. They all seemed to commit at least one unforgivable sin:
 

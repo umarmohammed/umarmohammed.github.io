@@ -7,7 +7,6 @@ author:
   display_name: David Boike
   email: david.boike@gmail.com
   url: http://www.make-awesome.com
-excerpt: "Recently Charlie Barker (@Porkstone on Twitter) asked me what I felt were pros  and cons of using RavenDB over a standard relational database. In this series of  posts I highlight the differences between RavenDB and a RDBMS that I have experienced  after completing three projects that incorporate Raven in some capacity.\r\nThe  power of Map Reduce is phenomenal. I think the analogy that Ayende used at the RavenDB  training I attended was the most apt.\r\n\r\nImagine you were trying to count up  all the people in a skyscraper. How would you go about it? If you were SQL Server,  you would send someone to every single room counting each person in turn. It would  take forever, and then you'd throw that information away, so that the next person  who wanted to know how many people were in the building would require the same effort  of running floor to floor counting every single person.\r\n\r\n"
 date: '2013-01-21 08:00:56 -0600'
 date_gmt: '2013-01-21 14:00:56 -0600'
 categories:
@@ -23,6 +22,8 @@ comments: true
  The power of Map Reduce is phenomenal. I think the analogy that Ayende used at the RavenDB training I attended was the most apt.
 
 Imagine you were trying to count up all the people in a skyscraper. How would you go about it? If you were SQL Server, you would send someone to every single room counting each person in turn. It would take forever, and then you'd throw that information away, so that the next person who wanted to know how many people were in the building would require the same effort of running floor to floor counting every single person.
+
+<!-- more -->
 
 That's not how RavenDB would do it. Raven would have one person from each room count the people from that room, and then one representative from each room would meet in a central location and the totals from each room would be summed. But the more impressive part is what happens if someone leaves the building, and you again want the count of people in the building. While SQL Server was busy running from floor to floor, RavenDB has kept tabs on the number of people in each room whenever someone enters or exits. Then only that room needs to be recounted, and the rest of the room totals do not have to be recalculated at all.
 

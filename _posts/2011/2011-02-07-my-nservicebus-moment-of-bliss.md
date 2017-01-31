@@ -7,21 +7,6 @@ author:
   display_name: David Boike
   email: david.boike@gmail.com
   url: http://www.make-awesome.com
-excerpt: '<p>Sometimes technology is more than just technology.&#160; Sometimes it
-  reaches out and grabs you, and you have a moment of bliss where you realize everything
-  has changed, that this is going to change <em>everything</em> and make your
-  life better.</p>  <p><a href="http:&#47;&#47;msdn.microsoft.com&#47;en-us&#47;library&#47;bb308959.aspx">LINQ</a>
-  was one of those technologies for me.&#160; Not the query-like syntax, per se; I
-  consider that to be just a fancy compiler trick.&#160; But the set of extension
-  methods for IEnumerable<T> and the way they can reduce a complex looping structure
-  to a line or two is amazing and game-changing.</p>  <p>Over the last year I
-  have been embracing <a href="http:&#47;&#47;www.nservicebus.com&#47;">NServiceBus</a>.&#160;
-  <a href="http:&#47;&#47;jonathan-oliver.blogspot.com&#47;">Jonathan Oliver</a>
-  describes NServiceBus as the best thing to happen to distributed systems since Ethernet,
-  and he&rsquo;s right on the money.&#160; My first major project using NServiceBus
-  has now been in production for a few months, and since then I&rsquo;ve been reflecting
-  on the process.</p>  <p>Now I realize there was one moment &ndash; that perfect
-  moment of bliss &ndash; when I realized NServiceBus had changed everything.</p>  <h2>   '
 date: '2011-02-07 08:00:00 -0600'
 date_gmt: '2011-02-07 14:00:00 -0600'
 categories:
@@ -38,6 +23,8 @@ Sometimes technology is more than just technology.  Sometimes it reaches out an
 Over the last year I have been embracing [NServiceBus](http://www.nservicebus.com/).  [Jonathan Oliver](http://jonathan-oliver.blogspot.com/) describes NServiceBus as the best thing to happen to distributed systems since Ethernet, and he’s right on the money.  My first major project using NServiceBus has now been in production for a few months, and since then I’ve been reflecting on the process.
 
 Now I realize there was one moment – that perfect moment of bliss – when I realized NServiceBus had changed everything.
+
+<!-- more -->
 
 ## Before NServiceBus
 

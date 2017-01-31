@@ -7,7 +7,6 @@ author:
   display_name: David Boike
   email: david.boike@gmail.com
   url: http://www.make-awesome.com
-excerpt: "When I first started writing Learning NServiceBus, I was targeting Version 4.0 which,  at that time, was still several months away from release. Writing about something  that&rsquo;s still very much in flux is definitely a challenge, and to some extent  I was definitely learning as I went.\r\n\r\nWhat really struck me during the writing  process was how much easier people learning NServiceBus 4.0 were going to have it  than I did when I learned NServiceBus 2.0. The developers at Particular Software (a name change from NServiceBus Ltd  &ndash; a lot of people seem to think they were bought and this is not the case)  are really obsessive about making a powerful framework as easy to use as possible,  and I salute them for that.\r\n\r\nI remember creating endpoints by hand. Create  a new Class Library project. Reference the NServiceBus DLLs and NServiceBus.Host.exe.  Build so that the EXE is copied to the bin directory. Go to Project Properties.  Set the debugger to run the Host. Create an EndpointConfig class. Add an App.config.  Enter a bunch of required XML configuration. OK that&rsquo;s a lie. As I was once quoted during a live coding demo, &ldquo;Don&rsquo;t  worry I have been doing this for years. You never write this yourself; you always  copy it from somewhere else.&rdquo; Not exactly a glowing recommendation right?\r\n\r\nThen  you start debugging and hope you didn&rsquo;t screw anything up.\r\n\r\nNServiceBus  3.x and 4.x changed all that. Now you just reference a the NServiceBus.Host NuGet  package and it sets all that stuff up for you. And if you need some bit of config,  you can run a helpful PowerShell cmdlet from the Package Manager Console to generate  it for you along with XML comments describing what every knob and lever does.\r\n\r\nNServiceBus  4.x is a fantastic platform to build distributed systems, but as of the release of NServiceBus 4.0 in July 2013, the big thing  still missing was the ability to effectively debug a messaging system (let&rsquo;s  face it, gargantuan log files don&rsquo;t count) and monitor a distributed system  in production to make sure everything isn&rsquo;t running off the rails.\r\n\r\nWell  that&rsquo;s all about to change.\r\n\r\n"
 date: '2014-04-24 08:00:51 -0500'
 date_gmt: '2014-04-24 13:00:51 -0500'
 categories:
@@ -33,6 +32,8 @@ NServiceBus 3.x and 4.x changed all that. Now you just reference a the NServiceB
 NServiceBus 4.x is a fantastic platform to build distributed systems, but as of the [release of NServiceBus 4.0 in July 2013](http://www.udidahan.com/2013/07/11/nservicebus-4-0-released/), the big thing still missing was the ability to effectively debug a messaging system (let’s face it, gargantuan log files don’t count) and monitor a distributed system in production to make sure everything isn’t running off the rails.
 
 Well that’s all about to change.
+
+<!-- more -->
 
 ## Don’t Build Your Own Monitoring Tools
 

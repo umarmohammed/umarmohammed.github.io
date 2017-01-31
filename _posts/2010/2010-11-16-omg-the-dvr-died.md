@@ -7,7 +7,6 @@ author:
   display_name: David Boike
   email: david.boike@gmail.com
   url: http://www.make-awesome.com
-excerpt: "Our DVR died of hard drive failure the other day.  It was like losing a  member of the family.\r\n\r\nWe installed new flooring in our living room which  meant moving all the furniture out.  Now, I was careful.  I'm a computer guy; I  know there's a fragile hard drive in there.  I unplugged it, as I was told, and  waited far longer than the 10 seconds they say to wait until it's safe.  Then I  still treated it with the care I would afford a newborn, gently placing it in a  safe location until the flooring project was complete.\r\n\r\nWhen we plugged it  back in it told us that the hard drive had failed and that we were essentially screwed.\r\n\r\n"
 date: '2010-11-16 21:28:25 -0600'
 date_gmt: '2010-11-17 03:28:25 -0600'
 categories:
@@ -22,6 +21,8 @@ Our DVR died of hard drive failure the other day. It was like losing a member of
 We installed new flooring in our living room which meant moving all the furniture out. Now, I was careful. I'm a computer guy; I know there's a fragile hard drive in there. I unplugged it, as I was told, and waited far longer than the 10 seconds they say to wait until it's safe. Then I still treated it with the care I would afford a newborn, gently placing it in a safe location until the flooring project was complete.
 
 When we plugged it back in it told us that the hard drive had failed and that we were essentially screwed.
+
+<!-- more -->
 
 Now, I assume that you, as a reader, are aware of all the wonderful advantages that a DVR has to offer. If not, I'm guessing you would probably find yourself saying or agreeing with at least one of the following statements:
 

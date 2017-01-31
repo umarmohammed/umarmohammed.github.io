@@ -22,6 +22,8 @@ What I don't like is implementing IComparable when I want to compare on more tha
 
 I don't like this kind of code because the engineer in me balks at essentially doing each comparison more than once, first for equality, and then for direction:
 
+<!-- more -->
+
     public int CompareTo(SomeObject other)
     {
         if (this.Prop1 != other.Prop1)

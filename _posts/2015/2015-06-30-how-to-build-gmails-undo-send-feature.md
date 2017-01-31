@@ -17,6 +17,8 @@ At least, it is with [NServiceBus](http://particular.net/nservicebus), and speci
 
 "Undo Send" is really just a specific case of a much more general pattern I'll call the buyer's remorse pattern.
 
+<!-- more -->
+
 ## Buyer's remorse pattern
 
 [In real life](https://en.wikipedia.org/wiki/Buyer%27s_remorse), we might get buyer's remorse when we buy an expensive car and then realize just how long we're going to have to make expensive payments on it. In software, we're not talking about a purchase - we're really referring to any action that cannot be easily undone. Sending emails fall squarely within this category of problems, along with charging credit cards, which can cause *real* buyer's remorse.
