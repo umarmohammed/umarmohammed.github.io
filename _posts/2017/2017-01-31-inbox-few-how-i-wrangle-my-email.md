@@ -15,7 +15,7 @@ Let's just say I could scroll down a long damn way.
 
 My primary method of determining if something was *handled* was whether or not it was read. If I needed to look at it later, mark it as unread. It worked out alright, as a software developer I didn't get that much email to start with, and work generally happened only during work hours.
 
-When I joined [Particular Software](https://particular.net) it became quickly apparent I was going to have to change how I managed my email was going to have to change.
+When I joined [Particular Software](https://particular.net) it became quickly apparent that how I managed my email was going to have to change.
 
 <!-- more -->
 
