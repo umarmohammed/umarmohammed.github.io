@@ -35,7 +35,7 @@ So the first thing I had to turn off is Gmail's tabbed email system that separat
 
 Instead, I set up filters to map this kind of stuff to labels/folders in Gmail. You can take advantage of Gmail's intelligence to identify these messages and direct them where you want.
 
-Using the searches `category:social` and `cateogry:promotions`, you can create Gmail filters to move these to separate labels, skip the inbox, and never mark it as important. I direct these to labels called **Notifications** and **Notify**, and this cleans up an amazing amount of what would otherwise land in my Inbox.
+Using the searches `category:social` and `category:promotions`, you can create Gmail filters to move these to separate labels, skip the inbox, and never mark it as important. I direct these to labels called **Notifications** and **Notify**, and this cleans up an amazing amount of what would otherwise land in my Inbox.
 
 I frequently skim these folders once per day, and mark them read en masse.
 
