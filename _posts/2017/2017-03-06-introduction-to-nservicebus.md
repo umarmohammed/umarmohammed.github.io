@@ -53,4 +53,4 @@ When complete, the system you build will look something like this:
 
 Sound interesting? If so, give the [**Introduction to NServiceBus**](https://docs.particular.net/tutorials/intro-to-nservicebus/) tutorial a try, and then ping me on Twitter [@DavidBoike](https://twitter.com/DavidBoike) to let me know what you think.
 
-The first tutorial is introductory, and introduces the concepts of messaging, sending messages, and using Publish/Subscribe. As it is introductory, there's a bit of code duplication. I would love to build additional tutorials in the future that will extend on this, showing how to organize NServiceBus projects, centralize repeated configuration, and show how to get the most out of NServiceBus Sagas. Let me know if you'd be interested in that as well!
+The first tutorial is introductory, and introduces the concepts of messaging, sending messages, and using Publish/Subscribe. I would love to build additional tutorials in the future that will extend on this, showing how to organize NServiceBus projects, centralize repeated configuration, and show how to get the most out of NServiceBus Sagas. Let me know if you'd be interested in that as well!
