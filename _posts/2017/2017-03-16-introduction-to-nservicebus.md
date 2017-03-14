@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Introduction to NServiceBus
-date: 2017-03-06
+date: 2017-03-16
 comments: true
 categories:
 - Development
@@ -43,7 +43,7 @@ So now that I have the advantage of working direclty for the [makers of NService
 
 ## The new tutorial
 
-In 5 lessons, each designed to be accomplished in a half hour or less, you'll learn the basics of working with NServiceBus. Of course this includes the techical aspecs like how to use the API to send messages, but also contains the messaging theory to help you get your NServiceBus projects off on the right foot.
+I designed the new tutorial as a series of 5 lessons, each designed to be accomplished in a half hour or less. The tutorial teaches the basics of working with NServiceBus but a lot more than that as well. It also covers the messaging theory to help you get your NServiceBus projects off on the right foot.
 
 Each lesson contains an exercise that guides you through each step of creating a sample messaging system in the retail/ecommerce domain. By the end of the tutorial, you'll have 4 messaging endpoints all exchanging messages with each other, and also learn how to use the tools in the Particular Service Platform to replay messages when the system suffers from temporary failures.
 
