@@ -22,7 +22,7 @@ When I started with continuous integration, I used [CruiseControl.NET](http://ww
 
 It didn’t take me long to switch to [Hudson CI](http://hudson-ci.org/).  It’s free, and it’s easily managed through an intuitive web interface. Not that I can’t grok XML configuration files; I’d just rather be spending my time building things instead of figuring out how to get them built.
 
-For a primer on how to use Hudson CI for .NET projects, take a look at [Getting Started With CI Using Hudson For Your .NET Projects](http://blog.bobcravens.com/2010/03/getting-started-with-ci-using-hudson-for-your-net-projects/) by Bob Cravens.
+For a primer on how to use Hudson CI for .NET projects, take a look at [Getting Started With CI Using Hudson For Your .NET Projects](http://blog.bobcravens.com/2010/03/getting-started-with-ci-using-hudson-for-your-net-projects/) by Bob Cravens, or *Continuous Integration with Hudson and .NET* ([dead link](http://refactor.tonoli.net/2009/12/04/continuous-integration-with-hudson-and-net/) - [snapshot from the Wayback Machine](https://web.archive.org/web/20160423021807/http://refactor.tonoli.net/2009/12/04/continuous-integration-with-hudson-and-net/)).
 
 The only problem is Hudson is Java-based, so it’s not exactly plug-n-play when it comes to .NET, MSBuild, and Visual Studio. Particularly, when a build failed, I would have to scan through hundreds of lines looking for the cause of the error, which is difficult to do with CTRL-F when this line is completely normal:
 
