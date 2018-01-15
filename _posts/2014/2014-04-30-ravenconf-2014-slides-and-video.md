@@ -25,5 +25,5 @@ Here is the [RavenConf 2014](http://conference.ravendb.net/) video and slides fo
 
 <!-- more -->
 
-<p align="center"><iframe src="&#47;&#47;www.youtube.com&#47;embed&#47;GLmk4_BjQl4" height="315" width="560" allowfullscreen="" frameborder="0"></iframe></p></p>
+<p align="center"><iframe src="&#47;&#47;www.youtube.com&#47;embed&#47;GLmk4_BjQl4" height="315" width="560" allowfullscreen="" frameborder="0"></iframe></p>
 <p align="center"><iframe src="https://www.slideshare.net/slideshow/embed_code/34132643" height="400" width="476" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe></p>
