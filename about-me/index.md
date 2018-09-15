@@ -12,7 +12,7 @@ date_gmt: '2010-04-26 17:32:45 -0500'
 categories:
 - Development
 tags: []
-comments: true
+comments: false
 ---
 
 My name is Umar Mohammed. Welcome to my blog. 
