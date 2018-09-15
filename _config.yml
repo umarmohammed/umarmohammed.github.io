@@ -1,31 +1,24 @@
 #
 # Blog Settings
 #
-author: David Boike
-description: "David Boike's Blog: Build. Optimize. Make Awesome."
-url: "http://www.make-awesome.com"
-title: David Boike
-subtitle: "Build. Optimize. Make Awesome."
-gravatar_url: https://2.gravatar.com/avatar/618a5078721cbfeb92fcd6393c8126f5
-subscribe_rss: http://feeds.feedburner.com/MakeAwesome
+author: Umar Mohammed
+description: "Umar's Blog"
+url: "https://umarmohammed.github.io/"
+title: Umar Mohammed
+subtitle: "Full Stack .Net Developer"
+gravatar_url: https://2.gravatar.com/avatar/83681fa7135eb9b4c8eea42018e77fbc
 
 # Github repositories
-github_user: DavidBoike
-github_repo_url: https://github.com/DavidBoike/davidboike.github.io/
+github_user: umarmohammed
+github_repo_url: https://github.com/umarmohammed/umarmohammed.github.io/
 
-# Twitter
-twitter_user: DavidBoike
-twitter_tweet_button: true
 
 # Stack Overflow
-stackoverflow_url: http://stackoverflow.com/users/10039/david-boike
+stackoverflow_url: https://stackoverflow.com/users/3836114/nodd13
 
 # Disqus Comments
-disqus_short_name: davidboike
+disqus_short_name: umarmohammed
 disqus_show_comment_count: true
-
-# Google Analytics
-google_analytics_tracking_id: UA-15084368-1
 
 
 #
@@ -45,7 +38,7 @@ exclude:
   - Gemfile.lock
   - RakeFile
 
-gems:
+plugins:
   - jekyll-redirect-from
   - jekyll-sitemap
   - jekyll-paginate
