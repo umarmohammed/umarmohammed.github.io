@@ -1,4 +1,3 @@
 User-agent: *
 Disallow:
 
-Sitemap: http://www.make-awesome.com/sitemap.xml 
