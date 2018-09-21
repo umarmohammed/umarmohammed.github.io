@@ -97,7 +97,7 @@ Currently our data is simply a list of Items. We need a way of representing that
 
 We do this by creating the following classes:
 
-### Category ViewModel
+#### Category ViewModel
 
 We create a new class to wrap our Category model. This ViewModel contains an extra boolean field to signify whether or not the Category has been selected
 
@@ -111,7 +111,7 @@ public class SelectCategoryViewModel
 
 We will later use the Selected Boolean field to decide if we should expand or contract the list.
 
-### CREATE A GROUPING DATA STRUCTURE
+#### Create a Grouping Data Structure
 
 We need to create a grouping structure to store our data. This structure allows us to restructure our data into a list of key value pairs.
 
@@ -135,7 +135,7 @@ For a more detailed explanation of this structure and grouping data in a ListVie
 
 ## The Page ViewModel
 
-### Initialise the Collection
+#### Initialise the Collection
 
 We bind our ListView to an Observable Collection of Groupings called Categories
 
@@ -170,30 +170,31 @@ The code example above:
 2. Creates a list of SelectCategoryViewModels from the data by searching for unique Category objects in the list of data items.
 3. For each SelectCategoryViewModel adds it to the Categories property.
 
-### Expanding/Contracting the List Of Items
+#### Expanding/Contracting the List Of Items
 
 When the Category is pressed we need a Command to either populate the list of Items with the data for that Category, or to clear it.
 
 ```csharp
 public DelegateCommand<Grouping<SelectCategoryViewModel, Item>> HeaderSelectedCommand
 {
-    get
+  get
+  {
+    return new DelegateCommand<Grouping<SelectCategoryViewModel, Item>>(
+    g =>
     {
-        return new DelegateCommand<Grouping<SelectCategoryViewModel, Item>>(g =>
+        if (g == null) return;
+        g.Key.Selected = !g.Key.Selected;
+        if (g.Key.Selected)
         {
-            if (g == null) return;
-            g.Key.Selected = !g.Key.Selected;
-            if (g.Key.Selected)
-            {
-                Data.DataFactory.DataItems
-                  .Where(i => (i.Category.CategoryId == g.Key.Category.CategoryId))
-                  .ForEach(g.Add);
-            }
-            else
-            {
-                g.Clear();
-            }
-        });
+            Data.DataFactory.DataItems
+              .Where(i => 
+                (i.Category.CategoryId == g.Key.Category.CategoryId))
+              .ForEach(g.Add);
+        }
+        else
+        {
+            g.Clear();
+        }});
     }
 }
 ```
@@ -215,7 +216,8 @@ The data is displayed using a ListView with the “IsGroupingEnabled” property
     <DataTemplate>
       <ViewCell>
         <ContentView Padding="10,0,0,0">
-          <Label Text="{Binding Key.Category.CategoryTitle}" VerticalOptions="Center"/>
+          <Label Text="{Binding Key.Category.CategoryTitle}" 
+                 VerticalOptions="Center"/>
           <ContentView.GestureRecognizers>
             <TapGestureRecognizer 
             Command="{Binding Source={x:Reference TheMainPage}, 
@@ -235,7 +237,7 @@ The data is displayed using a ListView with the “IsGroupingEnabled” property
 ```
 Taking a look at the above code in more detail:
 
-### The Categories Display:
+#### The Categories Display:
 
 The displaying of categories is handled in the GroupHeaderTemplate. The binding context for GroupHeaderTemplate is a Grouping. The DataTemplate is set to a custom ViewCell containing a Label which is bound the CategoryTitle. We wrap the Label in a ContentView so that we can add a TapGestureRecognizer to it.
 
@@ -243,13 +245,14 @@ Notice in the TapGestureRecognizer
 
 ```xml
 <TapGestureRecognizer 
-Command="{Binding Source={x:Reference TheMainPage}, Path=BindingContext.HeaderSelectedCommand}"
+Command="{Binding Source={x:Reference TheMainPage}, 
+  Path=BindingContext.HeaderSelectedCommand}"
 CommandParameter="{Binding .}"/>
 ```
 
 The Binding Context here is a Grouping, however we want to bind the Command to HeaderSelectedCommand in the Page’s ViewModel. We achieve this by setting the x:Name property of the Page to “TheMainPage”. We then set the Source and Path of the Binding accordingly. The CommandParameter is set to the current Binding Context signified by the “.”.
 
-### The Items Display
+#### The Items Display
 
 The displaying of Items is handled in the ItemTemplate of the ListView. We simply set to this to a TextCell with the "Text" property bound the "ItemTitle" of the Item.
 
