@@ -6,8 +6,7 @@ comments: true
 categories:
 - Mobile
 tags:
-- NServiceBus
-- RabbitMQ
+- Xamarin
 ---
 
 There's no out of the box functionality to create expandable list views in Xamarin Forms. A quick search on Google returns quite a few examples of how to achieve this using custom renderers. 
