@@ -4,7 +4,8 @@ title: Calling a .NET Core endpoint from angular
 date: 2018-09-29
 comments: true
 categories:
-- Mobile
+- Angular 
+- .Net Core
 tags:
 - angular
 - dotnetcore
