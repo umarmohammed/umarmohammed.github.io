@@ -241,7 +241,7 @@ public class AuthController : ControllerBase
 
 This endpoint simply authenticates the request by checking if the password is equal to "Password". If so, it creates a new JWT with a "name" claim set to the UserName in the request. We also set some of JWT registered claims such as "sub" and "jti" (see [https://tools.ietf.org/html/rfc7519](https://tools.ietf.org/html/rfc7519) for more details). 
 
-> Note that simply checking that the password matches a string is not a secure way of authentication. In practice a more sophisticated approach to checking the credentials should be used.
+> Note that simply checking that the password matches a string is not a secure way of doing authentication. In practice a more sophisticated approach to checking the credentials should be used.
 
 #### Getting a token
 Let's try out this new endpoint in Postman.
