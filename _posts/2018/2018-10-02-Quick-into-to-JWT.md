@@ -12,10 +12,13 @@ tags:
 Json Web Tokens (JWTs) have become a popular way of handling authentication in Single Page Applications (SPAs). This post is the first in a series covering how to do authentication between an Angular app and a .Net Core Web API Server using JWTs. In this post we go through a brief introduction of JWTs.
 
 <!-- more -->
+#### Posts in this series
+- A Brief intro to JWTS (This Post)
+- [.Net Core Authentication with JWTs (Part 2)]({{ site.baseurl }}{% link _posts/2018/2018-10-13-Dotnetcore-auth-with-JWT.md %}) 
 
 ## What are JWTs?
 
-Lets start by having a quick overview of what JWTs are. I won't go into too much detail as there are other resources on the web which do a better job. However in this post we cover enough to understand the basics.
+Let's start by having a quick overview of what JWTs are. I won't go into too much detail as there are other resources on the web which do a better job. However in this post we cover enough to understand the basics.
 
 A Json Web Token (JWT) is simply a Json object containing security information about who a user is and what they can do. This is represented as a set of claims such as a user's name, roles, email etc. 
 
@@ -29,18 +32,18 @@ JWTs are commonly used when authenticating between a SPA client and a Server Sid
 
 - The client sends some credentials to the server.
 - The server checks the credentials. If the credentials are correct it generates a JWT containing claims about the user and sends it back in the response.
-- The client sends the JWT in its HTTP "auth" header when making subsequent requests.
+- The client sends the JWT in its HTTP "Authorization" header when making subsequent requests.
 - The server Authenticates and Authorizes the client's requests by checking the claims in the JWT.
 
 ## How are they created?
 
-A few things stand out as being obvious from the above flow. 
+A few things stand out as being obvious from the above flow:
 
 - When inspecting a JWT the server needs to be able to verify who generated it.
 - The server also needs to be able to verify that the JWT hasn't been altered since it was generated, i.e. no claims have been added, removed or modified.
 - The JWT should be encoded making it easier to transfer via HTTP.
 
-These concerns are handled by base64 encoding the claims and cryptographically signing them. In particular a JWT is made up of three parts:
+These concerns are handled by base64-url encoding the claims and cryptographically signing them. In particular a JWT is made up of three parts:
 
 #### Parts of a JWT
 
@@ -68,14 +71,14 @@ These concerns are handled by base64 encoding the claims and cryptographically s
 
 The JWT is generated with the following operation
 ```
-base64encode(header) + '.' + 
-base64encode(payload) + '.' + 
+base64Urlencode(header) + '.' + 
+base64Urlencode(payload) + '.' + 
 cryptographicallySign(
-  base64encode(header), 
-  base64encode(payload), 
+  base64Urlencode(header), 
+  base64Urlencode(payload), 
   secret)
 ```
 
 The result is a string made up of three parts seperated by dots which can be easily transmitted over HTTP.
 
-Now that we know a little about JWTs the next post in this series looks at how we generate them using .Net Core.
+Now that we know a little about JWTs the [next post]({{ site.baseurl }}{% link _posts/2018/2018-10-13-Dotnetcore-auth-with-JWT.md %}) in this series looks at how we generate them using .Net Core.

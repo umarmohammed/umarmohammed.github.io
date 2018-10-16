@@ -29,6 +29,7 @@ Create a new empty .Net Core Web Application in Visual Studio.
 Edit the Startup class to use the MVC middleware. For this demo we also allow the application to allow any CORS for the preflight request sent by the Angular app. See [here](https://docs.microsoft.com/en-us/aspnet/core/security/cors?view=aspnetcore-2.1) for more details.
 
 ```csharp
+// Startup.cs
 public class Startup
 {
   public void ConfigureServices(IServiceCollection services)
@@ -60,6 +61,7 @@ public class Startup
 Add a Controller and Action to return some values
 
 ```csharp
+// ValuesController.cs
 [Route("api/[controller]")]
 [ApiController]
 public class ValuesController : ControllerBase
@@ -87,6 +89,7 @@ ng g service services/values
 ```
 
 ```ts
+// src\app\services\values.service.ts
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 
@@ -109,6 +112,7 @@ export class ValuesService {
 Call the service from the app component.
 
 ```ts
+// src\app\app.component.ts
 import { Component, OnInit } from '@angular/core';
 import { ValuesService } from './services/values.service';
 
@@ -137,7 +141,8 @@ export class AppComponent implements OnInit {
 }
 ```
 
-```
+```html
+<!-- src\app\app.component.html -->
 <ul>
   <li *ngFor = "let value of values">
     {% raw %}{{ value }}{% endraw %}
@@ -148,6 +153,7 @@ export class AppComponent implements OnInit {
 Edit the AppModule to import the HttpClientModule and declare the ValueService as a provider.
 
 ```ts
+// src\app\app.module.ts
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
