@@ -278,6 +278,8 @@ public class ValuesController : ControllerBase
 }
 ```
 
+> Note that this works because we set the ```ClaimTypes.Name``` claim when generating the JWT.
+
 Calling the endpoint from Postman we see:
 <div>
 <img class="post-img" src="/images/2018/postman_get_auth_user.png">
