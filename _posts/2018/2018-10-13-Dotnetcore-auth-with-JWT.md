@@ -151,7 +151,7 @@ This means all newly added controllers and actions are protected by default. Thi
 
 Let's try hitting the endpoint again from Postman.
 <div>
-<img class="post-img" src="/images/2018/postman_get_unauth.png" />
+<img class="post-img" src="/images/2018/postman_get_401.png" />
 </div>
 This time, as expected, we get a response with a 401 Unauthorized status.
 
