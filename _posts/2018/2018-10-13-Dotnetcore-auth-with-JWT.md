@@ -37,7 +37,7 @@ We test our setup by running the server locally and confirming our endpoint is w
 
 To issue and authenticate JWTs we'll need a few settings such as:
 - The secret key used to cryptographically sign the JWT
-- Some JWT claim values to signify who created the JWT (iss) and who the JWT is intended to be used for (aud). 
+- Some JWT claim values to signify who created the JWT (iss) and who the JWT is intended to be used by (aud). 
 
 We do this by adding an appsettings.json to our project:
 
@@ -51,12 +51,12 @@ We do this by adding an appsettings.json to our project:
   }
 }
 ```
-> Note that ideally you should store keys and secrets somewhere better such as the Azure Key Vault. See [the documentation](https://docs.microsoft.com/en-us/aspnet/core/fundamentals/configuration/?view=aspnetcore-2.1) for a discussion on this. Also note that you should use a more secure secret for your JWT key. See [this blog post](https://auth0.com/blog/brute-forcing-hs256-is-possible-the-importance-of-using-strong-keys-to-sign-jwts/) for more details.
+> Note that ideally you should store keys and secrets somewhere better than the settings file (such as the Azure Key Vault). See [the documentation](https://docs.microsoft.com/en-us/aspnet/core/fundamentals/configuration/?view=aspnetcore-2.1) for a discussion on this. Also note that you should use a more secure secret for your JWT key. See [this blog post](https://auth0.com/blog/brute-forcing-hs256-is-possible-the-importance-of-using-strong-keys-to-sign-jwts/) for more details.
 
 ## Securing the Enpoint
 
 #### Authorize Attribute
-The simplest way of securing an endpoint is by using the ```AuthorizeAttribute```. 
+The simplest way of securing an endpoint is by using the ```AuthorizeAttribute```. See [the documentation](https://docs.microsoft.com/en-us/aspnet/core/security/authorization/simple?view=aspnetcore-2.1) for more details.
 
 ```csharp
 // ValuesController.cs
@@ -147,7 +147,7 @@ public void ConfigureServices(IServiceCollection services)
 
     // ... 
 ``` 
-This means all newly added controllers and actions are protected by default. This prevents against accidently adding a controller and forgetting to add the ```[Authorize]``` filter. With this policy in place, we can go ahead and remove ```[Authorize]``` filter we added to the Values Controller. 
+This means all newly added controllers and actions are protected by default. This prevents against accidently adding a controller and forgetting to add the ```[Authorize]``` filter. With this policy in place, we can go ahead and remove the ```[Authorize]``` filter we added to the Values Controller. 
 
 Let's try hitting the endpoint again from Postman.
 <div>
@@ -237,9 +237,11 @@ public class AuthController : ControllerBase
 }
 ```
 
-> Note the ```[AllowAnonymous]``` filter which allows unauthorized users to access the endpoint. This is required in our example since all controller and actions require user's to be authenticated by default.
+> Note the ```[AllowAnonymous]``` filter, which allows unauthorized users to access the endpoint. This is required in our example since all controller and actions require users to be authenticated by default.
 
-This endpoint simply authenticates the request by checking if the password is equal to "Password". If so, it creates a new JWT with a "name" claim set to the UserName in the request. We also set some of JWT registered claims such as "sub" and "jti", see [https://tools.ietf.org/html/rfc7519](https://tools.ietf.org/html/rfc7519) for more details. In practice a more sophisticated approach to checking the token should be used.
+This endpoint simply authenticates the request by checking if the password is equal to "Password". If so, it creates a new JWT with a "name" claim set to the UserName in the request. We also set some of JWT registered claims such as "sub" and "jti" (see [https://tools.ietf.org/html/rfc7519](https://tools.ietf.org/html/rfc7519) for more details). 
+
+> Note that simply checking that the password matches a string is not a secure way of authentication. In practice a more sophisticated approach to checking the credentials should be used.
 
 #### Getting a token
 Let's try out this new endpoint in Postman.
@@ -248,7 +250,7 @@ Let's try out this new endpoint in Postman.
 </div>
 
 
- Great, we see that the server returns a JWT token. As discussed in Part 1 of this series, a JWT is simply a base64urlencoded Json object. This means that we can decode the token to see the payload. A good resource for doing this is [jwt.io](https://jwt.io/). The screenshot below shows the decoded payload of the token.
+ Great, we see that the server returns a JWT token. As discussed in Part 1 of this series, a JWT is simply a base64-url encoded Json object. This means that we can decode the token to see the payload. A good resource for doing this is [jwt.io](https://jwt.io/). The screenshot below shows the decoded payload of the token.
 <div>
 <img class="post-img" src="/images/2018/jwt_payload.png">
 </div>
@@ -264,7 +266,7 @@ Finally we are ready to make authenticated requests. We hit our values endpoint 
 
 As expected, the request is authenticated and the server returns a 200 status response. 
 
-Finally, we can also get the User's name from our controller action by using the ```User.Identity.Name``` property. We'll go ahead and edit our the action to return the name:
+Finally, we can also get the User's name from our controller action by using the ```User.Identity.Name``` property. We'll go ahead and edit the action to return the name:
 ```csharp
 // ValuesController.cs
 [Route("api/[controller]")]
