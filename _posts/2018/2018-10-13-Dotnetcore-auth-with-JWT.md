@@ -35,7 +35,7 @@ We test our setup by running the server locally and confirming our endpoint is w
 
 #### Settings
 
-To issue and authenticate JWTs we'll need a few settings such as  
+To issue and authenticate JWTs we'll need a few settings such as:
 - The secret key used to cryptographically sign the JWT
 - Some JWT claim values to signify who created the JWT (iss) and who the JWT is intended to be used for (aud). 
 
